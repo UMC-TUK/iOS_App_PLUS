@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UMC_firstpractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_4202" translatesAutoresizingMaskIntoConstraints="NO" id="r6d-lX-Ces">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="She is my fav actress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf5-9l-4Vt">
+                                <rect key="frame" x="48.666666666666657" y="743.33333333333337" width="296" height="30"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.059760643372594624" green="0.045627983642854475" blue="0.25364977904040409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="kf5-9l-4Vt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6rG-Qy-Dxs"/>
+                            <constraint firstItem="r6d-lX-Ces" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Po5-6k-BHB"/>
+                            <constraint firstItem="r6d-lX-Ces" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QaU-Jf-w84"/>
+                            <constraint firstItem="kf5-9l-4Vt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.78" id="jfY-8A-Nqe"/>
+                            <constraint firstItem="r6d-lX-Ces" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="uOq-nt-hgP"/>
+                            <constraint firstItem="r6d-lX-Ces" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="uj8-Dn-xAt"/>
+                            <constraint firstItem="r6d-lX-Ces" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uwG-QY-fHZ"/>
+                            <constraint firstItem="r6d-lX-Ces" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ylb-q9-aS7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274.04580152671753" y="-58.450704225352112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_4202" width="1124" height="1376"/>
+    </resources>
+</document>
