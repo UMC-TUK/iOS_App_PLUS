@@ -10,9 +10,11 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var bottomCollectionView: UICollectionView!
     @IBOutlet weak var pageView: UIPageControl!
     
     let flowLayout = UICollectionViewFlowLayout()
+    let bottomFlowLayout = UICollectionViewFlowLayout()
     
     var images: [UIImage?] = [
         UIImage(named: "page1"),
@@ -22,8 +24,17 @@ class ViewController: UIViewController {
         UIImage(named: "page5")
     ]
     
+    var bottomImages: [UIImage?] = [
+        UIImage(named: "product1"),
+        UIImage(named: "product2"),
+        UIImage(named: "product3")
+    ]
+    
     var timer: Timer?
     var currentCellIndex = 0
+    
+    var topCollectionViewDataSource: TopCollectionViewDataSource?
+    var bottomCollectionViewDataSource: BottomCollectionViewDataSource?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,14 +47,23 @@ class ViewController: UIViewController {
     }
     
     private func setupCollectionView() {
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        // top
+        collectionView.delegate = TopCollectionViewDelegate()
+        topCollectionViewDataSource = TopCollectionViewDataSource(viewController: self)
+        collectionView.dataSource = topCollectionViewDataSource
         
         flowLayout.scrollDirection = .horizontal
         flowLayout.itemSize = CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
-        
-        // 컬렉션뷰 속성에 flowLayout 할당
         collectionView.collectionViewLayout = flowLayout
+        
+        // bottom
+        bottomCollectionView.delegate = BottomCollectionViewDelegate()
+        bottomCollectionViewDataSource = BottomCollectionViewDataSource(viewController: self)
+        bottomCollectionView.dataSource = bottomCollectionViewDataSource
+        
+        bottomFlowLayout.scrollDirection = .horizontal
+        bottomFlowLayout.itemSize = CGSize(width: bottomCollectionView.frame.height, height: bottomCollectionView.frame.height)
+        bottomCollectionView.collectionViewLayout = bottomFlowLayout
     }
     
     private func startTimer() {
@@ -62,21 +82,60 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+
+class TopCollectionViewDataSource: NSObject, UICollectionViewDataSource {
+    
+    let viewController: ViewController
+    
+    init(viewController: ViewController) {
+        self.viewController = viewController
+        super.init()
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        return viewController.images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-        cell.imageView.image = images[indexPath.row]
+        cell.imageView.image = viewController.images[indexPath.row]
+        
         return cell
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        
-//        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
-//        
-//    }
+    
 }
 
+class TopCollectionViewDelegate: NSObject, UICollectionViewDelegate {
+    
+}
+
+class BottomCollectionViewDataSource: NSObject, UICollectionViewDataSource {
+    
+    let viewController: ViewController
+    
+    init(viewController: ViewController) {
+        self.viewController = viewController
+        super.init()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewController.bottomImages.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BottomCollectionViewCell", for: indexPath) as! BottomCollectionViewCell
+        cell.image.image = viewController.bottomImages[indexPath.row]
+        
+        if indexPath.item == viewController.bottomImages.count - 1 {
+            cell.seperate.backgroundColor = .white
+        }
+        
+        return cell
+    }
+    
+    
+}
+
+class BottomCollectionViewDelegate: NSObject, UICollectionViewDelegate {
+    
+}
