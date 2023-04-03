@@ -36,11 +36,12 @@ final class ViewController: UIViewController {
     let bigSaleList: [UIImage] = [UIImage(named: "saleItem1")!,
                                   UIImage(named: "saleItem2")!,
                                   UIImage(named: "saleItem3")!,
-                                  UIImage(named: "saleItem1")!,]
+                                  UIImage(named: "saleItem1")!,
+                                  UIImage(named: "saleItem2")!,
+                                  UIImage(named: "saleItem3")!,]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
@@ -51,7 +52,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == bannerCollectionView{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bannerCell", for: indexPath) as! BannerCollectionViewCell
-            cell.renderingImg(img: self.bannerImgList[indexPath.item])
+            cell.renderingImg(img: self.bannerImgList[indexPath.item],
+                              width: Int(collectionView.frame.width)/5 - 1,
+                              height: Int(collectionView.frame.height)/2 - 10)
             return cell
         }
         else if collectionView == bigSaleCollectionView{
@@ -72,7 +75,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             return CGSize(width: width, height: height)
         }
         else if collectionView == bigSaleCollectionView{
-            let width: CGFloat = (collectionView.frame.width / 3) - 1
+            let width: CGFloat = (collectionView.frame.width / 4) - 1
             let height: CGFloat = (collectionView.frame.height)
             return CGSize(width: width, height: height)
         }

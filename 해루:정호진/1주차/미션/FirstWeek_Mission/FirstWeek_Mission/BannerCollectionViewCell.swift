@@ -13,9 +13,9 @@ final class BannerCollectionViewCell: UICollectionViewCell{
     @IBOutlet weak var img: UIImageView!
     
     // MARK: 이미지 렌더링 후 넣기
-    func renderingImg(img:UIImage){
-        let newWidth = 60
-        let newHeight = 60
+    func renderingImg(img:UIImage, width: Int, height:Int){
+        let newWidth = width
+        let newHeight = height
         let newImageRect = CGRect(x: 0, y: 0, width: newWidth, height: newHeight)
         UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
         
