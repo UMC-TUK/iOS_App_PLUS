@@ -334,7 +334,7 @@
                                     <tabBarItem title="Home" image="home" selectedImage="home" id="fVj-zY-PVi"/>
                                     <tabBarItem title="Shops" image="shop" selectedImage="shop" id="OLc-za-oSe"/>
                                     <tabBarItem title="Discover" image="discover" selectedImage="discover" id="gji-uB-wcc"/>
-                                    <tabBarItem title="Picks" image="heart.fill" catalog="system" selectedImage="heart.fill" id="m2O-4T-kEX"/>
+                                    <tabBarItem title="Picks" image="heart" selectedImage="heart" id="m2O-4T-kEX"/>
                                     <tabBarItem title="My Page" image="My Page" selectedImage="My Page" id="j1E-qb-NcI"/>
                                 </items>
                                 <color key="tintColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -376,7 +376,7 @@
         <image name="bag" catalog="system" width="128" height="128"/>
         <image name="discover" width="36" height="40"/>
         <image name="dress" width="64" height="54"/>
-        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="heart" width="46" height="46"/>
         <image name="home" width="40" height="30"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="65"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
