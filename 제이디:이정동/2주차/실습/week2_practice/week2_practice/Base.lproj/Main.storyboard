@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GyB-kH-yy5">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--세계 시계-->
+        <scene sceneID="yLt-T9-6tN">
+            <objects>
+                <viewController id="RrK-Gs-GOS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wpf-IZ-ZRl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aTW-sh-bfM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="세계 시계" image="globe" catalog="system" id="MdE-ub-2wl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0L5-18-iDY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87.786259541984734" y="-586.61971830985919"/>
+        </scene>
+        <!--알람-->
+        <scene sceneID="Vxc-yb-OjC">
+            <objects>
+                <viewController id="QSc-b5-Mvx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a0n-f6-f1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fFc-Xo-KLv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="알람" image="alarm.fill" catalog="system" id="kT9-ME-QHk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53m-Hw-g42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828.24427480916029" y="-605.63380281690149"/>
+        </scene>
+        <!--타이머-->
+        <scene sceneID="6VU-eN-LZ5">
+            <objects>
+                <viewController id="As5-1G-GeP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bZX-BO-NF9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Oga-ry-ro8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="타이머" image="timer" catalog="system" id="KiO-sr-NCg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NfQ-1T-9tV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457.2519083969464" y="-220.42253521126761"/>
+        </scene>
+        <!--스톱워치-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="week2_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6S-5f-Tbv">
+                                <rect key="frame" x="43" y="199" width="307.33333333333331" height="95.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="qxQ-ef-td4">
+                                <rect key="frame" x="147.33333333333334" y="413" width="98.666666666666657" height="26"/>
+                            </pageControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="yAX-DR-tqU">
+                                <rect key="frame" x="36.666666666666657" y="396" width="320" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sD-07-uVA">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="gRx-Ph-Jp8"/>
+                                            <constraint firstAttribute="height" constant="60" id="rMU-2K-tP0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" systemColor="systemGray2Color"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="랩"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0v-SG-A4I">
+                                        <rect key="frame" x="260" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.38767267045170067" blue="0.0" alpha="0.69313948675496684" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Drx-2B-CJ1"/>
+                                            <constraint firstAttribute="width" constant="60" id="ZuU-ul-Zrc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="시작"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1U-6B-fnE">
+                                <rect key="frame" x="36.666666666666657" y="476" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="reS-Pz-v71"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yAX-DR-tqU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2N4-vJ-yh9"/>
+                            <constraint firstItem="qxQ-ef-td4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZN-xs-1Ct"/>
+                            <constraint firstItem="qxQ-ef-td4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4k1-UP-bAk"/>
+                            <constraint firstItem="t1U-6B-fnE" firstAttribute="trailing" secondItem="yAX-DR-tqU" secondAttribute="trailing" id="H5n-jm-Uib"/>
+                            <constraint firstItem="h6S-5f-Tbv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="NvC-bP-H07"/>
+                            <constraint firstAttribute="width" secondItem="yAX-DR-tqU" secondAttribute="width" multiplier="1.22812" id="fGr-R6-Myy"/>
+                            <constraint firstItem="h6S-5f-Tbv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hff-CE-nIN"/>
+                            <constraint firstItem="t1U-6B-fnE" firstAttribute="leading" secondItem="yAX-DR-tqU" secondAttribute="leading" id="oh4-oj-3Ps"/>
+                            <constraint firstItem="t1U-6B-fnE" firstAttribute="top" secondItem="yAX-DR-tqU" secondAttribute="bottom" constant="20" id="tkm-Ti-eh2"/>
+                            <constraint firstItem="yAX-DR-tqU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xIW-Ql-cO0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="스톱워치" image="stopwatch.fill" catalog="system" id="AaV-JK-hpA"/>
+                    <connections>
+                        <outlet property="leftButton" destination="3sD-07-uVA" id="b5d-C3-0JR"/>
+                        <outlet property="rightButton" destination="q0v-SG-A4I" id="LVe-xu-v4w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163" y="146"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oAO-AO-LtO">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GyB-kH-yy5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RTV-Re-D0k">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RrK-Gs-GOS" kind="relationship" relationship="viewControllers" id="3fU-GY-fzd"/>
+                        <segue destination="QSc-b5-Mvx" kind="relationship" relationship="viewControllers" id="BcQ-Ua-n7z"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="zwn-7k-4lk"/>
+                        <segue destination="As5-1G-GeP" kind="relationship" relationship="viewControllers" id="SsM-De-9Tp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNR-w7-FPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-838.93129770992368" y="-586.61971830985919"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alarm.fill" catalog="system" width="123" height="128"/>
+        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
+        <image name="timer" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
