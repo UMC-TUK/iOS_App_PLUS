@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Week01
+//  Week02_Practice
 //
-//  Created by 우주대스타 on 2023-03-28.
+//  Created by 우주대스타 on 2023-04-05.
 //
 
 import UIKit
