@@ -147,7 +147,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmD-Ej-Zer">
-                                <rect key="frame" x="0.0" y="91" width="414" height="805.00000000000011"/>
+                                <rect key="frame" x="0.0" y="91" width="414" height="805"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ceB-Tm-k6T">
                                         <rect key="frame" x="0.0" y="302.00000000000011" width="414" height="1458.6666666666667"/>
