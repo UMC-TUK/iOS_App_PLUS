@@ -21,6 +21,10 @@ class FirstViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        increaseCount()
+    }
+    
+    func increaseCount() {
         guard let cnt = count.text, let num = Int(cnt) else { return }
         count.text = "\(num + 1)"
     }
@@ -43,6 +47,8 @@ class FirstViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue" {
             let vc = segue.destination as! SecondViewController
+            
+            vc.previewVC = self
             
             vc.image = image
             vc.name = nameTextField.text

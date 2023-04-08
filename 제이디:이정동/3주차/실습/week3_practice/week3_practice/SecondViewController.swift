@@ -10,8 +10,9 @@ import UIKit
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
-    
     @IBOutlet weak var imageView: UIImageView!
+    
+    var previewVC: FirstViewController?
     
     var name: String?
     var hobby: String?
@@ -37,6 +38,8 @@ class SecondViewController: UIViewController {
         label.text = "이름은 \(name), 취미는 \(hobby)."
     }
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        previewVC?.increaseCount()
+    }
 
 }
