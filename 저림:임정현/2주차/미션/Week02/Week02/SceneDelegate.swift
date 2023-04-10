@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Week02_Practice
+//  Week02
 //
-//  Created by 우주대스타 on 2023-04-05.
+//  Created by 우주대스타 on 2023-04-07.
 //
 
 import UIKit
