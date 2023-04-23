@@ -91,7 +91,7 @@ class ViewController: UIViewController {
         numbers.forEach { btn in
             if btn == sender{
                 if textField.text! == "0" { textField.text! = "" }
-                if !self.symbol.isEmpty{ textField.text = "" }
+                if !checkInput{ print("called");textField.text = "" }
                 checkInput = true
                 textField.text! += btn.titleLabel?.text ?? ""
                 AC.setAttributedTitle(setACButtonAttribute(text: "C"), for: .normal)
@@ -109,7 +109,6 @@ class ViewController: UIViewController {
         else if AC.titleLabel?.text == "C"{
             AC.setAttributedTitle(setACButtonAttribute(text: "AC"), for: .normal)
             self.nextNum = 0
-            self.symbol = ""
         }
         textField.text = "0"
     }
@@ -117,6 +116,7 @@ class ViewController: UIViewController {
     // MARK: Clicked Plus Minus Button
     @IBAction func clickedPlusMinus(_ sender: Any) {
         var num = Double(textField.text ?? "0")!
+        
         if num < 0{
             num = abs(num)
         }
@@ -124,6 +124,15 @@ class ViewController: UIViewController {
             num = 0 - num
         }
         textField.text = String(num)
+        
+        if num == Double(Int(num)){
+            textField.text = String(Int(num))
+        }
+        else{
+            textField.text = String(num)
+        }
+        
+   
     }
     
     // MARK: Clicked Percentage Button
@@ -136,7 +145,7 @@ class ViewController: UIViewController {
         nextNum = Double(textField.text ?? "")!
         
         if symbol.isEmpty{
-            textField.text = String(nextNum)
+            textField.text = String(Int(textField.text ?? "")!)
         }
         else if nextNum != 0 && checkInput{
             calculateBefore()
@@ -153,7 +162,7 @@ class ViewController: UIViewController {
         if symbol.isEmpty {total = 1}
         
         if symbol.isEmpty{
-            textField.text = String(nextNum)
+            textField.text = String(Int(textField.text ?? "")!)
         }
         else if nextNum != 0 && checkInput{
             calculateBefore()
@@ -169,7 +178,7 @@ class ViewController: UIViewController {
         nextNum = Double(textField.text ?? "")!
         
         if symbol.isEmpty{
-            textField.text = String(nextNum)
+            textField.text = String(Int(textField.text ?? "")!)
         }
         else if nextNum != 0 && checkInput{
             calculateBefore()
@@ -183,11 +192,11 @@ class ViewController: UIViewController {
     // MARK: Clicked Plus Button
     @IBAction func clickedPlus(_ sender: Any) {
         nextNum = Double(textField.text ?? "")!
-        
-        if symbol.isEmpty{
-            textField.text = String(nextNum)
+
+        if symbol.isEmpty {
+            textField.text = String(Int(textField.text ?? "")!)
         }
-        else if nextNum != 0 && checkInput{
+        else if nextNum != 0 && checkInput {
             calculateBefore()
         }
         
@@ -218,17 +227,25 @@ class ViewController: UIViewController {
     
     // MARK: 계산 하는 함수
     private func calculateBefore(){
+        var num: Double = 0
         switch symbol{
         case "+":
-            textField.text = String(total + nextNum)
+            num = total + nextNum
         case "-":
-            textField.text = String(total - nextNum)
+            num = total - nextNum
         case "*":
-            textField.text = String(total * nextNum)
+            num = total * nextNum
         case "/":
-            textField.text = String(total / nextNum)
+            num = total / nextNum
         default:
             print("none")
+        }
+        
+        if num == Double(Int(num)){
+            textField.text = String(Int(num))
+        }
+        else{
+            textField.text = String(num)
         }
     }
     
