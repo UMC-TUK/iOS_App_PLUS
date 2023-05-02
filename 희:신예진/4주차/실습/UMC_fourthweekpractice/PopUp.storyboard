@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Pop Up View Controller-->
+        <scene sceneID="XI9-Jp-W0d">
+            <objects>
+                <viewController storyboardIdentifier="AlertPopUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A3m-sh-hkc" customClass="CustomPopUpViewController" customModule="UMC_fourthweekpractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Rn-6w-mxY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Det-o9-A2Y" userLabel="bgBtn">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onBgBtnClicked:" destination="A3m-sh-hkc" eventType="touchUpInside" id="nQ3-nd-dSi"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8I-Qn-FLB" userLabel="contentView">
+                                <rect key="frame" x="71.666666666666686" y="226" width="250" height="400"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="루피" translatesAutoresizingMaskIntoConstraints="NO" id="JXe-wB-sos">
+                                        <rect key="frame" x="64.999999999999986" y="20" width="120.00000000000001" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="HXL-wH-9Nt"/>
+                                            <constraint firstAttribute="width" constant="120" id="NJQ-Jt-tBD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UMC 4th Delegate 실습중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eg-hq-dmA">
+                                        <rect key="frame" x="28" y="148" width="194" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IT 대표 기업 취업 가보자고" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gb-0a-zqD">
+                                        <rect key="frame" x="35.333333333333329" y="176.33333333333331" width="179" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iBk-cg-FcM">
+                                        <rect key="frame" x="64.999999999999986" y="262" width="120.00000000000001" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0U-CG-MOC">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="gpZ-dM-aEk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="NAVER">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onSubscribeBtnClicked:" destination="A3m-sh-hkc" eventType="touchUpInside" id="IwG-Tm-jwg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGt-g3-GrI">
+                                                <rect key="frame" x="0.0" y="40" width="120" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="nsU-Df-VLf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Kakaotalk">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onOpenChatBtnClicked:" destination="A3m-sh-hkc" eventType="touchUpInside" id="AJE-17-QMZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBb-Cm-KrQ">
+                                                <rect key="frame" x="0.0" y="80" width="120" height="30"/>
+                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="g1J-LX-Ivv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="TOSS">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onBlogBtnClicked:" destination="A3m-sh-hkc" eventType="touchUpInside" id="ufB-Pc-jYt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="iBk-cg-FcM" secondAttribute="bottom" constant="28" id="9d7-Cx-NRK"/>
+                                    <constraint firstItem="JXe-wB-sos" firstAttribute="centerX" secondItem="j8I-Qn-FLB" secondAttribute="centerX" id="Ewk-5Y-Ssh"/>
+                                    <constraint firstItem="2Gb-0a-zqD" firstAttribute="top" secondItem="6eg-hq-dmA" secondAttribute="bottom" constant="8" id="Oel-HF-MgS"/>
+                                    <constraint firstItem="6eg-hq-dmA" firstAttribute="top" secondItem="JXe-wB-sos" secondAttribute="bottom" constant="8" id="QL0-ui-KJj"/>
+                                    <constraint firstItem="iBk-cg-FcM" firstAttribute="centerX" secondItem="j8I-Qn-FLB" secondAttribute="centerX" id="Uql-Zv-HcE"/>
+                                    <constraint firstItem="2Gb-0a-zqD" firstAttribute="centerX" secondItem="j8I-Qn-FLB" secondAttribute="centerX" id="XHu-UT-cdT"/>
+                                    <constraint firstAttribute="width" constant="250" id="YBZ-GF-rkv"/>
+                                    <constraint firstItem="6eg-hq-dmA" firstAttribute="centerX" secondItem="j8I-Qn-FLB" secondAttribute="centerX" id="gcm-dr-grO"/>
+                                    <constraint firstAttribute="height" constant="400" id="hhW-0z-xDJ"/>
+                                    <constraint firstItem="JXe-wB-sos" firstAttribute="top" secondItem="j8I-Qn-FLB" secondAttribute="top" constant="20" id="w64-sA-6rd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kLw-Fx-uC2"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.63875440139999995" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Det-o9-A2Y" firstAttribute="leading" secondItem="kLw-Fx-uC2" secondAttribute="leading" id="PL8-Cf-dTX"/>
+                            <constraint firstItem="Det-o9-A2Y" firstAttribute="trailing" secondItem="kLw-Fx-uC2" secondAttribute="trailing" id="Tyi-S6-0bg"/>
+                            <constraint firstItem="j8I-Qn-FLB" firstAttribute="centerX" secondItem="4Rn-6w-mxY" secondAttribute="centerX" id="Wm6-M6-Wlc"/>
+                            <constraint firstItem="Det-o9-A2Y" firstAttribute="top" secondItem="kLw-Fx-uC2" secondAttribute="top" id="bOJ-UI-FYJ"/>
+                            <constraint firstItem="j8I-Qn-FLB" firstAttribute="centerY" secondItem="4Rn-6w-mxY" secondAttribute="centerY" id="eZU-Q6-QVd"/>
+                            <constraint firstItem="Det-o9-A2Y" firstAttribute="bottom" secondItem="kLw-Fx-uC2" secondAttribute="bottom" id="i0E-YG-OQy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bfBtn" destination="Det-o9-A2Y" id="hpo-Bo-EU6"/>
+                        <outlet property="blogBtn" destination="rBb-Cm-KrQ" id="k4I-51-5Ri"/>
+                        <outlet property="contentView" destination="j8I-Qn-FLB" id="YWY-GE-Swp"/>
+                        <outlet property="openChatBtn" destination="ZGt-g3-GrI" id="YfS-EU-Fba"/>
+                        <outlet property="subsribeBtn" destination="F0U-CG-MOC" id="vZU-5x-cyh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifM-j2-E3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="160.71428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="루피" width="1300" height="1300"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
