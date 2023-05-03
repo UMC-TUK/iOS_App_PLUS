@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350044012A0209A70098CDB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350044002A0209A70098CDB1 /* AppDelegate.swift */; };
+		350044032A0209A70098CDB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350044022A0209A70098CDB1 /* SceneDelegate.swift */; };
+		350044052A0209A70098CDB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350044042A0209A70098CDB1 /* ViewController.swift */; };
+		350044082A0209A70098CDB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 350044062A0209A70098CDB1 /* Main.storyboard */; };
+		3500440A2A0209A80098CDB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350044092A0209A80098CDB1 /* Assets.xcassets */; };
+		3500440D2A0209A80098CDB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3500440B2A0209A80098CDB1 /* LaunchScreen.storyboard */; };
+		350044182A0209A80098CDB1 /* UMC_fifthweekpracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350044172A0209A80098CDB1 /* UMC_fifthweekpracticeTests.swift */; };
+		350044222A0209A80098CDB1 /* UMC_fifthweekpracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350044212A0209A80098CDB1 /* UMC_fifthweekpracticeUITests.swift */; };
+		350044242A0209A80098CDB1 /* UMC_fifthweekpracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350044232A0209A80098CDB1 /* UMC_fifthweekpracticeUITestsLaunchTests.swift */; };
+		350044362A02165C0098CDB1 /* SalesPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350044342A02165C0098CDB1 /* SalesPostTableViewCell.swift */; };
+		350044372A02165C0098CDB1 /* SalesPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 350044352A02165C0098CDB1 /* SalesPostTableViewCell.xib */; };
+		350044392A021A8C0098CDB1 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350044382A021A8C0098CDB1 /* TableViewModel.swift */; };
+		3500443B2A021AD90098CDB1 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3500443A2A021AD90098CDB1 /* DataType.swift */; };
+		3500443D2A021D6D0098CDB1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3500443C2A021D6D0098CDB1 /* TableViewController.swift */; };
+		358976792A021FB7001DB9DB /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358976772A021FB7001DB9DB /* FruitCell.swift */; };
+		3589767A2A021FB7001DB9DB /* FruitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358976782A021FB7001DB9DB /* FruitCell.xib */; };
+		FF2D068E46B98027ED28B172 /* Pods_UMC_fifthweekpractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAC3900248E0F8401BD1091 /* Pods_UMC_fifthweekpractice.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		350044142A0209A80098CDB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 350043F52A0209A70098CDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 350043FC2A0209A70098CDB1;
+			remoteInfo = UMC_fifthweekpractice;
+		};
+		3500441E2A0209A80098CDB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 350043F52A0209A70098CDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 350043FC2A0209A70098CDB1;
+			remoteInfo = UMC_fifthweekpractice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09921D8DB63D0322ECB8F874 /* Pods-UMC_fifthweekpractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_fifthweekpractice.release.xcconfig"; path = "Target Support Files/Pods-UMC_fifthweekpractice/Pods-UMC_fifthweekpractice.release.xcconfig"; sourceTree = "<group>"; };
+		26B8D7C0506DA7722054D698 /* Pods-UMC_fifthweekpractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_fifthweekpractice.debug.xcconfig"; path = "Target Support Files/Pods-UMC_fifthweekpractice/Pods-UMC_fifthweekpractice.debug.xcconfig"; sourceTree = "<group>"; };
+		350043FD2A0209A70098CDB1 /* UMC_fifthweekpractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMC_fifthweekpractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		350044002A0209A70098CDB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		350044022A0209A70098CDB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		350044042A0209A70098CDB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		350044072A0209A70098CDB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		350044092A0209A80098CDB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3500440C2A0209A80098CDB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3500440E2A0209A80098CDB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		350044132A0209A80098CDB1 /* UMC_fifthweekpracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UMC_fifthweekpracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		350044172A0209A80098CDB1 /* UMC_fifthweekpracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_fifthweekpracticeTests.swift; sourceTree = "<group>"; };
+		3500441D2A0209A80098CDB1 /* UMC_fifthweekpracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UMC_fifthweekpracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		350044212A0209A80098CDB1 /* UMC_fifthweekpracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_fifthweekpracticeUITests.swift; sourceTree = "<group>"; };
+		350044232A0209A80098CDB1 /* UMC_fifthweekpracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_fifthweekpracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		350044342A02165C0098CDB1 /* SalesPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPostTableViewCell.swift; sourceTree = "<group>"; };
+		350044352A02165C0098CDB1 /* SalesPostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalesPostTableViewCell.xib; sourceTree = "<group>"; };
+		350044382A021A8C0098CDB1 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		3500443A2A021AD90098CDB1 /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		3500443C2A021D6D0098CDB1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		358976772A021FB7001DB9DB /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
+		358976782A021FB7001DB9DB /* FruitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitCell.xib; sourceTree = "<group>"; };
+		5CAC3900248E0F8401BD1091 /* Pods_UMC_fifthweekpractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_fifthweekpractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		350043FA2A0209A70098CDB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2D068E46B98027ED28B172 /* Pods_UMC_fifthweekpractice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350044102A0209A80098CDB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3500441A2A0209A80098CDB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		350043F42A0209A70098CDB1 = {
+			isa = PBXGroup;
+			children = (
+				350043FF2A0209A70098CDB1 /* UMC_fifthweekpractice */,
+				350044162A0209A80098CDB1 /* UMC_fifthweekpracticeTests */,
+				350044202A0209A80098CDB1 /* UMC_fifthweekpracticeUITests */,
+				350043FE2A0209A70098CDB1 /* Products */,
+				503CC7AE6442E2AC4CACE994 /* Pods */,
+				5853E3A50CC7AC375A928ADC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		350043FE2A0209A70098CDB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				350043FD2A0209A70098CDB1 /* UMC_fifthweekpractice.app */,
+				350044132A0209A80098CDB1 /* UMC_fifthweekpracticeTests.xctest */,
+				3500441D2A0209A80098CDB1 /* UMC_fifthweekpracticeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		350043FF2A0209A70098CDB1 /* UMC_fifthweekpractice */ = {
+			isa = PBXGroup;
+			children = (
+				350044002A0209A70098CDB1 /* AppDelegate.swift */,
+				350044022A0209A70098CDB1 /* SceneDelegate.swift */,
+				350044042A0209A70098CDB1 /* ViewController.swift */,
+				3500443C2A021D6D0098CDB1 /* TableViewController.swift */,
+				350044382A021A8C0098CDB1 /* TableViewModel.swift */,
+				3500443A2A021AD90098CDB1 /* DataType.swift */,
+				350044342A02165C0098CDB1 /* SalesPostTableViewCell.swift */,
+				350044352A02165C0098CDB1 /* SalesPostTableViewCell.xib */,
+				350044062A0209A70098CDB1 /* Main.storyboard */,
+				350044092A0209A80098CDB1 /* Assets.xcassets */,
+				3500440B2A0209A80098CDB1 /* LaunchScreen.storyboard */,
+				3500440E2A0209A80098CDB1 /* Info.plist */,
+				358976772A021FB7001DB9DB /* FruitCell.swift */,
+				358976782A021FB7001DB9DB /* FruitCell.xib */,
+			);
+			path = UMC_fifthweekpractice;
+			sourceTree = "<group>";
+		};
+		350044162A0209A80098CDB1 /* UMC_fifthweekpracticeTests */ = {
+			isa = PBXGroup;
+			children = (
+				350044172A0209A80098CDB1 /* UMC_fifthweekpracticeTests.swift */,
+			);
+			path = UMC_fifthweekpracticeTests;
+			sourceTree = "<group>";
+		};
+		350044202A0209A80098CDB1 /* UMC_fifthweekpracticeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				350044212A0209A80098CDB1 /* UMC_fifthweekpracticeUITests.swift */,
+				350044232A0209A80098CDB1 /* UMC_fifthweekpracticeUITestsLaunchTests.swift */,
+			);
+			path = UMC_fifthweekpracticeUITests;
+			sourceTree = "<group>";
+		};
+		503CC7AE6442E2AC4CACE994 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26B8D7C0506DA7722054D698 /* Pods-UMC_fifthweekpractice.debug.xcconfig */,
+				09921D8DB63D0322ECB8F874 /* Pods-UMC_fifthweekpractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5853E3A50CC7AC375A928ADC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CAC3900248E0F8401BD1091 /* Pods_UMC_fifthweekpractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		350043FC2A0209A70098CDB1 /* UMC_fifthweekpractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350044272A0209A80098CDB1 /* Build configuration list for PBXNativeTarget "UMC_fifthweekpractice" */;
+			buildPhases = (
+				D3464D8ACA1B158A29F9047C /* [CP] Check Pods Manifest.lock */,
+				350043F92A0209A70098CDB1 /* Sources */,
+				350043FA2A0209A70098CDB1 /* Frameworks */,
+				350043FB2A0209A70098CDB1 /* Resources */,
+				C074EAF620F4ACC53642B4B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UMC_fifthweekpractice;
+			productName = UMC_fifthweekpractice;
+			productReference = 350043FD2A0209A70098CDB1 /* UMC_fifthweekpractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		350044122A0209A80098CDB1 /* UMC_fifthweekpracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3500442A2A0209A80098CDB1 /* Build configuration list for PBXNativeTarget "UMC_fifthweekpracticeTests" */;
+			buildPhases = (
+				3500440F2A0209A80098CDB1 /* Sources */,
+				350044102A0209A80098CDB1 /* Frameworks */,
+				350044112A0209A80098CDB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				350044152A0209A80098CDB1 /* PBXTargetDependency */,
+			);
+			name = UMC_fifthweekpracticeTests;
+			productName = UMC_fifthweekpracticeTests;
+			productReference = 350044132A0209A80098CDB1 /* UMC_fifthweekpracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3500441C2A0209A80098CDB1 /* UMC_fifthweekpracticeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3500442D2A0209A80098CDB1 /* Build configuration list for PBXNativeTarget "UMC_fifthweekpracticeUITests" */;
+			buildPhases = (
+				350044192A0209A80098CDB1 /* Sources */,
+				3500441A2A0209A80098CDB1 /* Frameworks */,
+				3500441B2A0209A80098CDB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3500441F2A0209A80098CDB1 /* PBXTargetDependency */,
+			);
+			name = UMC_fifthweekpracticeUITests;
+			productName = UMC_fifthweekpracticeUITests;
+			productReference = 3500441D2A0209A80098CDB1 /* UMC_fifthweekpracticeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		350043F52A0209A70098CDB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					350043FC2A0209A70098CDB1 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					350044122A0209A80098CDB1 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 350043FC2A0209A70098CDB1;
+					};
+					3500441C2A0209A80098CDB1 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 350043FC2A0209A70098CDB1;
+					};
+				};
+			};
+			buildConfigurationList = 350043F82A0209A70098CDB1 /* Build configuration list for PBXProject "UMC_fifthweekpractice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 350043F42A0209A70098CDB1;
+			productRefGroup = 350043FE2A0209A70098CDB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				350043FC2A0209A70098CDB1 /* UMC_fifthweekpractice */,
+				350044122A0209A80098CDB1 /* UMC_fifthweekpracticeTests */,
+				3500441C2A0209A80098CDB1 /* UMC_fifthweekpracticeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		350043FB2A0209A70098CDB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350044372A02165C0098CDB1 /* SalesPostTableViewCell.xib in Resources */,
+				3500440D2A0209A80098CDB1 /* LaunchScreen.storyboard in Resources */,
+				3500440A2A0209A80098CDB1 /* Assets.xcassets in Resources */,
+				350044082A0209A70098CDB1 /* Main.storyboard in Resources */,
+				3589767A2A021FB7001DB9DB /* FruitCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350044112A0209A80098CDB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3500441B2A0209A80098CDB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C074EAF620F4ACC53642B4B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMC_fifthweekpractice/Pods-UMC_fifthweekpractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMC_fifthweekpractice/Pods-UMC_fifthweekpractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UMC_fifthweekpractice/Pods-UMC_fifthweekpractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3464D8ACA1B158A29F9047C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMC_fifthweekpractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		350043F92A0209A70098CDB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				358976792A021FB7001DB9DB /* FruitCell.swift in Sources */,
+				350044362A02165C0098CDB1 /* SalesPostTableViewCell.swift in Sources */,
+				350044052A0209A70098CDB1 /* ViewController.swift in Sources */,
+				3500443D2A021D6D0098CDB1 /* TableViewController.swift in Sources */,
+				350044392A021A8C0098CDB1 /* TableViewModel.swift in Sources */,
+				350044012A0209A70098CDB1 /* AppDelegate.swift in Sources */,
+				350044032A0209A70098CDB1 /* SceneDelegate.swift in Sources */,
+				3500443B2A021AD90098CDB1 /* DataType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3500440F2A0209A80098CDB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350044182A0209A80098CDB1 /* UMC_fifthweekpracticeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350044192A0209A80098CDB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350044222A0209A80098CDB1 /* UMC_fifthweekpracticeUITests.swift in Sources */,
+				350044242A0209A80098CDB1 /* UMC_fifthweekpracticeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		350044152A0209A80098CDB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 350043FC2A0209A70098CDB1 /* UMC_fifthweekpractice */;
+			targetProxy = 350044142A0209A80098CDB1 /* PBXContainerItemProxy */;
+		};
+		3500441F2A0209A80098CDB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 350043FC2A0209A70098CDB1 /* UMC_fifthweekpractice */;
+			targetProxy = 3500441E2A0209A80098CDB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		350044062A0209A70098CDB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				350044072A0209A70098CDB1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3500440B2A0209A80098CDB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3500440C2A0209A80098CDB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		350044252A0209A80098CDB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		350044262A0209A80098CDB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		350044282A0209A80098CDB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B8D7C0506DA7722054D698 /* Pods-UMC_fifthweekpractice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UMC_fifthweekpractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yejin.UMC-fifthweekpractice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		350044292A0209A80098CDB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09921D8DB63D0322ECB8F874 /* Pods-UMC_fifthweekpractice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UMC_fifthweekpractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yejin.UMC-fifthweekpractice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3500442B2A0209A80098CDB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yejin.UMC-fifthweekpracticeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UMC_fifthweekpractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UMC_fifthweekpractice";
+			};
+			name = Debug;
+		};
+		3500442C2A0209A80098CDB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yejin.UMC-fifthweekpracticeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UMC_fifthweekpractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UMC_fifthweekpractice";
+			};
+			name = Release;
+		};
+		3500442E2A0209A80098CDB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yejin.UMC-fifthweekpracticeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UMC_fifthweekpractice;
+			};
+			name = Debug;
+		};
+		3500442F2A0209A80098CDB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yejin.UMC-fifthweekpracticeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UMC_fifthweekpractice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		350043F82A0209A70098CDB1 /* Build configuration list for PBXProject "UMC_fifthweekpractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350044252A0209A80098CDB1 /* Debug */,
+				350044262A0209A80098CDB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		350044272A0209A80098CDB1 /* Build configuration list for PBXNativeTarget "UMC_fifthweekpractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350044282A0209A80098CDB1 /* Debug */,
+				350044292A0209A80098CDB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3500442A2A0209A80098CDB1 /* Build configuration list for PBXNativeTarget "UMC_fifthweekpracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3500442B2A0209A80098CDB1 /* Debug */,
+				3500442C2A0209A80098CDB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3500442D2A0209A80098CDB1 /* Build configuration list for PBXNativeTarget "UMC_fifthweekpracticeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3500442E2A0209A80098CDB1 /* Debug */,
+				3500442F2A0209A80098CDB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 350043F52A0209A70098CDB1 /* Project object */;
+}
