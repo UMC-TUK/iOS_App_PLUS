@@ -1,0 +1,20 @@
+PODS:
+  - JGProgressHUD (2.2)
+  - lottie-ios (4.0.1)
+
+DEPENDENCIES:
+  - JGProgressHUD
+  - lottie-ios
+
+SPEC REPOS:
+  trunk:
+    - JGProgressHUD
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  lottie-ios: 54d22edf55b839f0929cabbfe609c9aa548b1145
+
+PODFILE CHECKSUM: ffd2840d5ee2e7fd4b9a5b57d70b9e2c2e5e125c
+
+COCOAPODS: 1.11.3
