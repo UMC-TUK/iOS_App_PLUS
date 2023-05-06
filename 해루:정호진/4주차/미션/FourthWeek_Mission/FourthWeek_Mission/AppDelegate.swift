@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  week3
+//  FourthWeek_Mission
 //
-//  Created by gildong hong on 2023/05/01.
+//  Created by 정호진 on 2023/05/06.
 //
 
 import UIKit
