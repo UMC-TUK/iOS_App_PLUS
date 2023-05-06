@@ -32,12 +32,14 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         initRefresh()
         DispatchQueue.main.asyncAfter (
         deadline: .now()+1, execute: {
             self.showExample()
         })
         
+    
     }
     
     func showExample(){
@@ -51,7 +53,7 @@ class ViewController: UIViewController{
         //        hud.detailTextLabel.text = "Please wait"
         hud.show(in: view)
         //        3초뒤에 이 문구 없어지고 뷰 나타나게 됨.
-        hud.dismiss(afterDelay: 5)
+        hud.dismiss(afterDelay: 3)
         
         var progress: Float = 0.0
         Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true){
@@ -78,6 +80,7 @@ class ViewController: UIViewController{
             
             refreshControl.backgroundColor = .black
             refreshControl.tintColor = .white
+        
             refreshControl.attributedTitle = NSAttributedString(string: "더 많은 상품을 즐겨보세요!")
             
             collectionView.refreshControl = refreshControl
