@@ -10,9 +10,15 @@ import UIKit
 class TableViewHeaderView: UITableViewHeaderFooterView {
 
     @IBOutlet weak var name: UILabel!
-
+    @IBOutlet weak var switchButton: UISwitch!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        switchButton.isOn = false
+    }
 }

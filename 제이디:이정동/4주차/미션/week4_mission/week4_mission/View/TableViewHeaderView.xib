@@ -23,11 +23,16 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3NZ-gy-Xdf">
+                            <rect key="frame" x="561" y="118.66666666666669" width="51" height="31"/>
+                        </switch>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="FNX-72-mRH" firstAttribute="leading" secondItem="A5i-yP-CmA" secondAttribute="leading" constant="30" id="1iC-So-QtV"/>
+                        <constraint firstAttribute="trailing" secondItem="3NZ-gy-Xdf" secondAttribute="trailing" constant="30" id="D3N-Cx-SXV"/>
                         <constraint firstItem="FNX-72-mRH" firstAttribute="centerY" secondItem="A5i-yP-CmA" secondAttribute="centerY" id="Vl3-nC-gRs"/>
+                        <constraint firstItem="3NZ-gy-Xdf" firstAttribute="centerY" secondItem="A5i-yP-CmA" secondAttribute="centerY" id="o0u-lj-jbR"/>
                     </constraints>
                 </view>
             </subviews>
@@ -42,6 +47,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="name" destination="FNX-72-mRH" id="qFB-ho-Tj7"/>
+                <outlet property="switchButton" destination="3NZ-gy-Xdf" id="9Ia-mm-Mgh"/>
             </connections>
             <point key="canvasLocation" x="493.12977099236639" y="-233.09859154929578"/>
         </view>
