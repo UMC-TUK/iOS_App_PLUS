@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2fT-kt-4JZ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ScrollView1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="ScrollView1" id="BYZ-38-t0r" customClass="VerticalViewController" customModule="UMC_fourthweekpractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64n-89-Xq4">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1441"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-sA-nQL">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1075"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X28-Zf-8w9">
+                                                <rect key="frame" x="10" y="10" width="373" height="1055"/>
+                                                <mutableString key="text">Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="X28-Zf-8w9" firstAttribute="top" secondItem="Wdb-sA-nQL" secondAttribute="top" constant="10" id="GAD-Wv-Dit"/>
+                                            <constraint firstAttribute="trailing" secondItem="X28-Zf-8w9" secondAttribute="trailing" constant="10" id="VnN-lF-ftf"/>
+                                            <constraint firstItem="X28-Zf-8w9" firstAttribute="leading" secondItem="Wdb-sA-nQL" secondAttribute="leading" constant="10" id="YJ5-Tt-FUs"/>
+                                            <constraint firstAttribute="bottom" secondItem="X28-Zf-8w9" secondAttribute="bottom" constant="10" id="jlM-BD-fXz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wdb-sA-nQL" firstAttribute="leading" secondItem="wzJ-rY-38Y" secondAttribute="leading" id="DnD-GY-oVY"/>
+                                    <constraint firstItem="Wdb-sA-nQL" firstAttribute="bottom" secondItem="wzJ-rY-38Y" secondAttribute="bottom" id="IBv-16-sHa"/>
+                                    <constraint firstItem="Wdb-sA-nQL" firstAttribute="width" secondItem="a0j-qF-2Za" secondAttribute="width" id="Xeu-DX-DHX"/>
+                                    <constraint firstItem="Wdb-sA-nQL" firstAttribute="trailing" secondItem="wzJ-rY-38Y" secondAttribute="trailing" id="xgz-hk-W2Z"/>
+                                    <constraint firstItem="Wdb-sA-nQL" firstAttribute="top" secondItem="wzJ-rY-38Y" secondAttribute="top" id="zUv-7U-Glh"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="wzJ-rY-38Y"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="a0j-qF-2Za"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="64n-89-Xq4" secondAttribute="trailing" id="Hxf-dU-akw"/>
+                            <constraint firstAttribute="bottom" secondItem="64n-89-Xq4" secondAttribute="bottom" id="TXz-iV-6mX"/>
+                            <constraint firstItem="64n-89-Xq4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sLS-zv-wFw"/>
+                            <constraint firstItem="64n-89-Xq4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tXg-MK-Ulk"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ltu-C5-krX">
+            <objects>
+                <viewController id="DAg-1c-VCe" customClass="ViewController" customModule="UMC_fourthweekpractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gr9-7h-dLJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cam-z9-TU2">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1407"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="B74-3O-7rS" style="IBUITableViewCellStyleDefault" id="MkM-cY-EsU">
+                                        <rect key="frame" x="0.0" y="55.333332061767578" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MkM-cY-EsU" id="0cy-kX-obt">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B74-3O-7rS">
+                                                    <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="DAg-1c-VCe" id="QHl-4c-yqE"/>
+                                    <outlet property="delegate" destination="DAg-1c-VCe" id="J17-fF-hDp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XvS-sC-jtA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cam-z9-TU2" firstAttribute="leading" secondItem="XvS-sC-jtA" secondAttribute="leading" id="NH8-Eb-Cnm"/>
+                            <constraint firstItem="XvS-sC-jtA" firstAttribute="trailing" secondItem="cam-z9-TU2" secondAttribute="trailing" id="OpZ-f8-blu"/>
+                            <constraint firstItem="cam-z9-TU2" firstAttribute="top" secondItem="XvS-sC-jtA" secondAttribute="top" id="b4U-QS-DPa"/>
+                            <constraint firstItem="XvS-sC-jtA" firstAttribute="bottom" secondItem="cam-z9-TU2" secondAttribute="bottom" id="tHD-Ns-XDY"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1500"/>
+                    <connections>
+                        <outlet property="tableView" destination="cam-z9-TU2" id="vEc-Ay-rfq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMp-Do-clZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="-225"/>
+        </scene>
+        <!--Pop View Controller-->
+        <scene sceneID="6yk-UA-jtw">
+            <objects>
+                <viewController id="KfQ-4L-jZo" customClass="PopViewController" customModule="UMC_fourthweekpractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qqe-Xe-MwS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbJ-4R-VeX">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny3-7T-Xpk">
+                                <rect key="frame" x="146.66666666666666" y="382" width="100" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AFZ-mg-6ty"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="onCreatePopUpBtnClicked:" destination="KfQ-4L-jZo" eventType="touchUpInside" id="J1P-Hf-JBQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="85Z-dB-09C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AbJ-4R-VeX" firstAttribute="trailing" secondItem="85Z-dB-09C" secondAttribute="trailing" id="Fyy-ZJ-CUE"/>
+                            <constraint firstItem="AbJ-4R-VeX" firstAttribute="top" secondItem="85Z-dB-09C" secondAttribute="top" id="ddH-a3-x7E"/>
+                            <constraint firstItem="AbJ-4R-VeX" firstAttribute="leading" secondItem="85Z-dB-09C" secondAttribute="leading" id="g8O-Jm-djs"/>
+                            <constraint firstItem="AbJ-4R-VeX" firstAttribute="bottom" secondItem="85Z-dB-09C" secondAttribute="bottom" id="u9j-Gj-bIg"/>
+                            <constraint firstItem="85Z-dB-09C" firstAttribute="bottom" secondItem="Ny3-7T-Xpk" secondAttribute="bottom" constant="400" id="wxo-N3-0Lb"/>
+                            <constraint firstItem="Ny3-7T-Xpk" firstAttribute="centerX" secondItem="Qqe-Xe-MwS" secondAttribute="centerX" id="yha-Ui-i02"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createPopUpBtn" destination="Ny3-7T-Xpk" id="vh0-yv-uka"/>
+                        <outlet property="myWebView" destination="AbJ-4R-VeX" id="VBg-TI-Y9F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9F-Zb-h58" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2068" y="-46"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="zNS-zK-SEr">
+            <objects>
+                <viewController id="2fT-kt-4JZ" customClass="CollectionViewController" customModule="UMC_fourthweekpractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mOO-sW-poH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hpx-cg-gI4">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1407"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rcE-dl-GPM">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="ZnW-HS-RCl">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="whm-9x-mgy">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="2fT-kt-4JZ" id="43w-Z6-V0k"/>
+                                    <outlet property="delegate" destination="2fT-kt-4JZ" id="GuP-jI-XZT"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rSt-fu-406"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rSt-fu-406" firstAttribute="trailing" secondItem="Hpx-cg-gI4" secondAttribute="trailing" id="Zfo-Le-2kr"/>
+                            <constraint firstItem="Hpx-cg-gI4" firstAttribute="top" secondItem="rSt-fu-406" secondAttribute="top" id="a7Q-Xj-6qt"/>
+                            <constraint firstItem="Hpx-cg-gI4" firstAttribute="leading" secondItem="rSt-fu-406" secondAttribute="leading" id="bVE-w8-IMs"/>
+                            <constraint firstItem="rSt-fu-406" firstAttribute="bottom" secondItem="Hpx-cg-gI4" secondAttribute="bottom" id="yHe-pm-ubc"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1500"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Hpx-cg-gI4" id="dlW-ri-H1p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Z6-jT-ujB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2746" y="-1018"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
