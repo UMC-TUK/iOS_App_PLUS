@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		421D4D6E2A06B9F3002B6998 /* RelodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421D4D6D2A06B9F3002B6998 /* RelodViewController.swift */; };
+<<<<<<< HEAD
+=======
+		427963FB2A09221200D57AAB /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 427963FA2A09221200D57AAB /* cat.json */; };
+>>>>>>> b6f7e349d70f0176eaf93ae56d72aa97688d6eb8
 		42A8C8DF2A02B78B001AD5B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8C8DE2A02B78B001AD5B4 /* AppDelegate.swift */; };
 		42A8C8E12A02B78B001AD5B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8C8E02A02B78B001AD5B4 /* SceneDelegate.swift */; };
 		42A8C8E32A02B78B001AD5B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8C8E22A02B78B001AD5B4 /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		29321E670341F0EA64FA69F3 /* Pods_Week05_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Week05_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421D4D6D2A06B9F3002B6998 /* RelodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelodViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		427963FA2A09221200D57AAB /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
+>>>>>>> b6f7e349d70f0176eaf93ae56d72aa97688d6eb8
 		42A8C8DB2A02B78B001AD5B4 /* Week05_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week05_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A8C8DE2A02B78B001AD5B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42A8C8E02A02B78B001AD5B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +99,10 @@
 		42D4F0332A02BBF700FA4E94 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				427963FA2A09221200D57AAB /* cat.json */,
+>>>>>>> b6f7e349d70f0176eaf93ae56d72aa97688d6eb8
 				42D4F0342A02BC1900FA4E94 /* christmas-tree.json */,
 			);
 			path = Util;
@@ -168,6 +180,10 @@
 				42A8C8EB2A02B78C001AD5B4 /* LaunchScreen.storyboard in Resources */,
 				42A8C8E82A02B78C001AD5B4 /* Assets.xcassets in Resources */,
 				42D4F0352A02BC1900FA4E94 /* christmas-tree.json in Resources */,
+<<<<<<< HEAD
+=======
+				427963FB2A09221200D57AAB /* cat.json in Resources */,
+>>>>>>> b6f7e349d70f0176eaf93ae56d72aa97688d6eb8
 				42A8C8E62A02B78B001AD5B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
