@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Week4
+//  week7_practice
 //
-//  Created by 이서영 on 2022/10/15.
+//  Created by 이정동 on 2023/05/15.
 //
 
 import UIKit
