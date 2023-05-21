@@ -1,0 +1,6 @@
+framework module Pods_UMC_seventhweekmission2Tests {
+  umbrella header "Pods-UMC_seventhweekmission2Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
