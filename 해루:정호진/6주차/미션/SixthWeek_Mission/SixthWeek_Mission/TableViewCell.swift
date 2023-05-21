@@ -32,6 +32,7 @@ final class TableViewCell: UITableViewCell{
     }
     
     func changeLabelColor(color: UIColor, check: Bool){
+        print("?")
         self.hourLabel.textColor = color
         self.minuteLabel.textColor = color
         self.checkAlarmSwitch.isOn = check
