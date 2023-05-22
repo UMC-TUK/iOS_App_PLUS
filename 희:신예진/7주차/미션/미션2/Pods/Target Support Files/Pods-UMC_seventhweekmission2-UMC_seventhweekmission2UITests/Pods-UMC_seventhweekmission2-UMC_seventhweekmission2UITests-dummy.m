@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_UMC_seventhweekmission2_UMC_seventhweekmission2UITests : NSObject
+@end
+@implementation PodsDummy_Pods_UMC_seventhweekmission2_UMC_seventhweekmission2UITests
+@end

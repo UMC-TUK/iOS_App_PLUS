@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5LF-gW-HyA">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UMC_seventhweekmission2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6856" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-ao-a81">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uz6-v0-9uE">
+                                <rect key="frame" x="39" y="691.33333333333337" width="315" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Uz6-v0-9uE" secondAttribute="height" multiplier="7:1" id="02X-Do-jon"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="kakao_login_medium_wide"/>
+                                <connections>
+                                    <action selector="kakaoLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4I-sz-Ue4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bLe-ao-a81" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2nH-hW-y5z"/>
+                            <constraint firstAttribute="trailing" secondItem="bLe-ao-a81" secondAttribute="trailing" id="AAM-Nv-VNf"/>
+                            <constraint firstAttribute="bottom" secondItem="bLe-ao-a81" secondAttribute="bottom" id="QKj-pd-hjd"/>
+                            <constraint firstItem="Uz6-v0-9uE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VzK-F4-wWE"/>
+                            <constraint firstItem="bLe-ao-a81" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eat-c6-Iqk"/>
+                            <constraint firstItem="Uz6-v0-9uE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.55" id="nxj-d8-0Rv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hRn-Lt-HAm"/>
+                    <connections>
+                        <segue destination="Q2m-Gx-6g9" kind="show" identifier="NextScreenSegue" id="dg9-6E-hpm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980.91603053435108" y="-34.507042253521128"/>
+        </scene>
+        <!--SecondViewController-->
+        <scene sceneID="wqV-IB-4E1">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" title="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q2m-Gx-6g9" customClass="SecondViewController" customModule="UMC_seventhweekmission2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yCE-9Z-msJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4th UMC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IS-xl-USO">
+                                <rect key="frame" x="124.66666666666669" y="396.33333333333331" width="144" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5IS-xl-USO" secondAttribute="height" multiplier="8:2" id="O1K-Tt-CBy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T2e-fH-08b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5IS-xl-USO" firstAttribute="centerY" secondItem="T2e-fH-08b" secondAttribute="centerY" multiplier="0.9" id="QZF-4a-tl7"/>
+                            <constraint firstItem="5IS-xl-USO" firstAttribute="centerX" secondItem="T2e-fH-08b" secondAttribute="centerX" id="fX3-c5-Cyc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" style="editor" id="6Q8-Rh-cr5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMv-0x-UlR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1769" y="-35"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9bi-Y0-fcc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5LF-gW-HyA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q9M-Z6-JGX">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="t79-Dd-zwS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZy-hl-ZeS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_6856" width="1125" height="2240"/>
+        <image name="kakao_login_medium_wide" width="300" height="45"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
