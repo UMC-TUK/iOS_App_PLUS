@@ -98,11 +98,6 @@ class ViewController: UIViewController {
         showAlertAction(alarmList[index])
     }
     
-    @objc func changeBackgroundColor() {
-        let color: [UIColor] = [.lightGray, .orange, .yellow, .cyan, .blue, .white]
-        view.backgroundColor = color.randomElement()
-    }
-    
     @objc func signOutButtonTapped() {
         saveUserAlarms()
         UserDefaults.standard.removeObject(forKey: "user")
