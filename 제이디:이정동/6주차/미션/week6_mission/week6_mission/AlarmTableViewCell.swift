@@ -25,13 +25,13 @@ class AlarmTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
     }
     
     
@@ -44,6 +44,14 @@ class AlarmTableViewCell: UITableViewCell {
 
     @IBAction func alarmSwitchTapped(_ sender: UISwitch) {
         guard let row = row else { return }
+        
+        let shakingKeyframe = CAKeyframeAnimation(keyPath: "position.x")
+        shakingKeyframe.values = [0, 5, -5, 5, 2, 2, -2, 0]
+        shakingKeyframe.keyTimes = [0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1]
+        shakingKeyframe.duration = 0.4
+        shakingKeyframe.isAdditive = true // true이면 values가 현재 위치 기준, false이면 values가 Screen좌표 기준
+        self.layer.add(shakingKeyframe, forKey: "shaking")
+        
         delegate?.switchValueChanged(isOn: sender.isOn, row: row)
     }
 }

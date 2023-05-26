@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xEC-11-wh5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l2f-rq-KDo">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="qB2-2Q-12W">
-                                <rect key="frame" x="36.666666666666657" y="129" width="320" height="216"/>
+                                <rect key="frame" x="37" y="129" width="320" height="216"/>
                                 <locale key="locale" localeIdentifier="ko_KR"/>
                             </datePicker>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVm-b4-JqV">
@@ -164,39 +164,10 @@
             </objects>
             <point key="canvasLocation" x="2530.5343511450383" y="-27.464788732394368"/>
         </scene>
-        <!--Sign In View Controller-->
-        <scene sceneID="MYN-8V-uDz">
-            <objects>
-                <viewController storyboardIdentifier="SignInViewController" id="xEC-11-wh5" customClass="SignInViewController" customModule="week6_mission" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="F2Q-rg-289">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctc-4t-DqB">
-                                <rect key="frame" x="134.33333333333334" y="408.66666666666669" width="124.66666666666666" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Google Login"/>
-                                <connections>
-                                    <action selector="googleSignInButtonTapped:" destination="xEC-11-wh5" eventType="touchUpInside" id="l4y-q4-L21"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ReU-lQ-wvK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Ctc-4t-DqB" firstAttribute="centerX" secondItem="F2Q-rg-289" secondAttribute="centerX" id="X7g-bL-fdW"/>
-                            <constraint firstItem="Ctc-4t-DqB" firstAttribute="centerY" secondItem="F2Q-rg-289" secondAttribute="centerY" id="q9t-IO-Zrl"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jcm-R0-JDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-47" y="-2"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="gse-SX-mRi">
             <objects>
-                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="l2f-rq-KDo" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l2f-rq-KDo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="dTd-Uv-rfa">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>

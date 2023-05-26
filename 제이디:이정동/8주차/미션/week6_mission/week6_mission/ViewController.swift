@@ -8,36 +8,15 @@
 import UIKit
 import UserNotifications
 
-struct Alarm: Codable {
+struct Alarm {
     var ampm: String
     var time: String
     var isOn: Bool
     var dateTime: Date
 }
 
-extension UserDefaults {
-    func setUserAlarms(userEmail: String, alarm: [Alarm]) {
-        let encoder = JSONEncoder()
-        
-        if let encoded = try? encoder.encode(alarm) {
-            UserDefaults.standard.setValue(encoded, forKey: userEmail)
-        }
-    }
-    
-    func getUserAlarms(_ userEmail: String) -> [Alarm]? {
-        
-        guard let savedData = UserDefaults.standard.object(forKey: userEmail) as? Data else { return nil }
-        
-        let decoder = JSONDecoder()
-        
-        guard let savedObject = try? decoder.decode([Alarm].self, from: savedData) else { return nil }
-        
-        return savedObject
-    }
-}
-
 class ViewController: UIViewController {
-    
+
     @IBOutlet weak var tableView: UITableView!
     
     var alarmList: [Alarm] = []
@@ -49,9 +28,9 @@ class ViewController: UIViewController {
         setupNavigationBar()
         setupTableView()
         startTimer()
-        getUserAlarms()
+        autoUiRefresh()
     }
-    
+
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -59,21 +38,13 @@ class ViewController: UIViewController {
     }
     
     private func setupNavigationBar() {
-        
-        navigationItem.rightBarButtonItems = [
-            UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(signOutButtonTapped)),
-            UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAlarmButtonTapped))
-        ]
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAlarmButtonTapped))
         navigationItem.rightBarButtonItem?.tintColor = .orange
-        navigationItem.rightBarButtonItems?.forEach({ $0.tintColor = .orange })
     }
     
-    private func getUserAlarms() {
-        guard let email = UserDefaults.standard.string(forKey: "user") else { return }
-        guard let alarms = UserDefaults.standard.getUserAlarms(email) else { return }
-        self.alarmList = alarms
+    func autoUiRefresh() {
+        Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(changeBackgroundColor), userInfo: nil, repeats: true)
     }
-    
     
     func startTimer() {
         for index in 0..<alarmList.count {
@@ -98,13 +69,9 @@ class ViewController: UIViewController {
         showAlertAction(alarmList[index])
     }
     
-    @objc func signOutButtonTapped() {
-        saveUserAlarms()
-        UserDefaults.standard.removeObject(forKey: "user")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let signInViewController = storyboard.instantiateViewController(identifier: "SignInViewController")
-        
-        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(signInViewController)
+    @objc func changeBackgroundColor() {
+        let color: [UIColor] = [.lightGray, .orange, .yellow, .cyan, .blue, .white]
+        view.backgroundColor = color.randomElement()
     }
     
     func showAlertAction(_ alarm: Alarm) {
@@ -114,11 +81,6 @@ class ViewController: UIViewController {
         }
         alert.addAction(ok)
         present(alert, animated: true)
-    }
-    
-    func saveUserAlarms() {
-        guard let email = UserDefaults.standard.string(forKey: "user") else { return }
-        UserDefaults.standard.setUserAlarms(userEmail: email, alarm: self.alarmList)
     }
 }
 
@@ -143,12 +105,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ViewController: AddingAlarmVCDelegate {
     func appendAlarmData(_ alarm: Alarm) {
-        
-        
-        
         self.alarmList.append(alarm)
         self.alarmList.sort { $0.dateTime < $1.dateTime }
-        self.saveUserAlarms()
         self.tableView.reloadData()
         self.startTimer()
     }

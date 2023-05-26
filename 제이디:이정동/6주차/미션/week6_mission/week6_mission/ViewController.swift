@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         setupNavigationBar()
         setupTableView()
         startTimer()
-        autoUiRefresh()
     }
 
     private func setupTableView() {
@@ -40,10 +39,6 @@ class ViewController: UIViewController {
     private func setupNavigationBar() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAlarmButtonTapped))
         navigationItem.rightBarButtonItem?.tintColor = .orange
-    }
-    
-    func autoUiRefresh() {
-        Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(changeBackgroundColor), userInfo: nil, repeats: true)
     }
     
     func startTimer() {
@@ -67,11 +62,6 @@ class ViewController: UIViewController {
         alarmList[index].isOn = false
         
         showAlertAction(alarmList[index])
-    }
-    
-    @objc func changeBackgroundColor() {
-        let color: [UIColor] = [.lightGray, .orange, .yellow, .cyan, .blue, .white]
-        view.backgroundColor = color.randomElement()
     }
     
     func showAlertAction(_ alarm: Alarm) {
