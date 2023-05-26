@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        view.addGestureRecognizer(UIPinchGestureRecognizer(target: self, action: #selector(doPinch(_:))))
+        subView.addGestureRecognizer(UIPinchGestureRecognizer(target: self, action: #selector(doPinch(_:))))
     }
     
     @objc func doPinch(_ pinch: UIPinchGestureRecognizer) {
