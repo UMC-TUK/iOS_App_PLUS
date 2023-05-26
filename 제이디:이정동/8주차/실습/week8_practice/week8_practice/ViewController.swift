@@ -19,6 +19,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         subView.addGestureRecognizer(UIPinchGestureRecognizer(target: self, action: #selector(doPinch(_:))))
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(doTap(_:)))
+        tapGesture.numberOfTapsRequired = 2
+        subView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func doTap(_ tap: UITapGestureRecognizer) {
+        if subView.frame.width == 120 {
+            subViewWidth.constant = 240
+            subViewHeight.constant = 240
+        } else {
+            subViewWidth.constant = 120
+            subViewHeight.constant = 120
+        }
+
+        UIView.animate(withDuration: 2) {
+            if self.view.backgroundColor == .yellow {
+                self.view.backgroundColor = .white
+            } else {
+                self.view.backgroundColor = .yellow
+            }
+            self.view.layoutIfNeeded()
+        }
     }
     
     @objc func doPinch(_ pinch: UIPinchGestureRecognizer) {
