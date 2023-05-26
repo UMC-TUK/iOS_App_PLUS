@@ -9,6 +9,7 @@ import Foundation
 import Combine
 import KakaoSDKAuth
 import KakaoSDKUser
+import UIKit
 
 class KakaoAuthVM: ObservableObject {
     
@@ -34,7 +35,6 @@ class KakaoAuthVM: ObservableObject {
                 }
                 else {
                     print("loginWithKakaoTalk() success.")
-                    
                     //do something
                     _ = oauthToken
                     continuation.resume(returning:  true)
@@ -52,7 +52,7 @@ class KakaoAuthVM: ObservableObject {
                 }
                 else {
                     print("loginWithKakaoAccount() success.")
-                    
+//                    self.getUserInfo()
                     //do something
                     _ = oauthToken
                     continuation.resume(returning:  true)
@@ -68,10 +68,13 @@ class KakaoAuthVM: ObservableObject {
         Task{
             if (UserApi.isKakaoTalkLoginAvailable()) {
                 isLoggedIn = await kakaoLoginWithApp()
-               
+                print("::")
+                print(isLoggedIn)
             } else {
                 //카톡 설치가 안되어 있는 경우
                 isLoggedIn = await kakaoLoginwithAccount()
+                print("::")
+                print(isLoggedIn)
             }
         }
     }
@@ -101,3 +104,33 @@ class KakaoAuthVM: ObservableObject {
         }
     }
 }
+
+//extension KakaoAuthVM {
+//
+//// ✅ 사용자 정보를 성공적으로 가져오면 화면전환 한다.
+//    private func getUserInfo() {
+//
+//        // ✅ 사용자 정보 가져오기
+//        UserApi.shared.me() {(user, error) in
+//            if let error = error {
+//                print(error)
+//            }
+//            else {
+//                print("me() success.")
+//
+//                // ✅ 닉네임, 이메일 정보
+//                let nickname = user?.kakaoAccount?.profile?.nickname
+//                let email = user?.kakaoAccount?.email
+//
+//                guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
+//
+//                // ✅ 사용자 정보 넘기기
+//                nextVC.nickname = nickname
+//                nextVC.email = email
+//
+//                // ✅ 화면전환
+//                self.navigationController?.pushViewController(nextVC, animated: true)
+//            }
+//        }
+//    }
+//}

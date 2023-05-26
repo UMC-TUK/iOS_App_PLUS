@@ -26,6 +26,7 @@
 		42F35F9B2A1BB3F4002A8303 /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 42F35F9A2A1BB3F4002A8303 /* KakaoSDKTemplate */; };
 		42F35F9D2A1BB3F4002A8303 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 42F35F9C2A1BB3F4002A8303 /* KakaoSDKUser */; };
 		42F35FA02A1BC3AD002A8303 /* KakaoAuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F35F9F2A1BC3AD002A8303 /* KakaoAuthVM.swift */; };
+		42F35FA22A1C586B002A8303 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F35FA12A1C586B002A8303 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		42F35F7E2A1BAC05002A8303 /* Week07_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week07_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		42F35F9E2A1BB4D9002A8303 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		42F35F9F2A1BC3AD002A8303 /* KakaoAuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthVM.swift; sourceTree = "<group>"; };
+		42F35FA12A1C586B002A8303 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				42F35F9F2A1BC3AD002A8303 /* KakaoAuthVM.swift */,
 				42F35F5F2A1BAC03002A8303 /* ViewController.swift */,
 				42F35F612A1BAC03002A8303 /* Main.storyboard */,
+				42F35FA12A1C586B002A8303 /* LoginViewController.swift */,
 				42F35F642A1BAC05002A8303 /* Assets.xcassets */,
 				42F35F662A1BAC05002A8303 /* LaunchScreen.storyboard */,
 				42F35F692A1BAC05002A8303 /* Info.plist */,
@@ -298,6 +301,7 @@
 				42F35FA02A1BC3AD002A8303 /* KakaoAuthVM.swift in Sources */,
 				42F35F602A1BAC03002A8303 /* ViewController.swift in Sources */,
 				42F35F5C2A1BAC03002A8303 /* AppDelegate.swift in Sources */,
+				42F35FA22A1C586B002A8303 /* LoginViewController.swift in Sources */,
 				42F35F5E2A1BAC03002A8303 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

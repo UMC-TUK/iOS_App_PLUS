@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBindings()
+        if kakaoAuthVM.isLoggedIn == true {
+            nextPage()
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -25,12 +29,17 @@ class ViewController: UIViewController {
     @IBAction func loginBtnClicked(_ sender: Any) {
         print("loginBtnclicked() called")
         kakaoAuthVM.KakaoLogin()
-        loginLabel.text = "로그인상태"
-//        if kakaoAuthVM.isLoggedIn == true {
-//            loginLabel.text = "로그인 상태"
-//        }
+        print("kakaoAuthVM >> ")
+        print(kakaoAuthVM.isLoggedIn)
+        if kakaoAuthVM.isLoggedIn == true {
+//            self.loginLabel.text = "check"
+            print("check")
+//            nextPage()
+        }
+        print("outside")
+//        nextPage()
     }
-    
+
     
     @IBAction func logoutBtnClicked(_ sender: Any) {
         print("logoutBtnClicked() called")
@@ -46,4 +55,9 @@ extension ViewController {
     fileprivate func setBindings() {
         self.kakaoAuthVM.loginStatusInfo.receive(on:  DispatchQueue.main).assign(to: \.text, on: self.loginLabel).store(in: &subscriptions)
     }
+    func nextPage(){
+            guard let loginViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else {return}
+    
+                present(loginViewController, animated: true)
+        }
 }
