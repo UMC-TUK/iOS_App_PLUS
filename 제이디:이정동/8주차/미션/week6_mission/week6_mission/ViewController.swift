@@ -7,6 +7,7 @@
 
 import UIKit
 import UserNotifications
+import SPAlert
 
 struct Alarm {
     var ampm: String
@@ -28,7 +29,6 @@ class ViewController: UIViewController {
         setupNavigationBar()
         setupTableView()
         startTimer()
-        autoUiRefresh()
     }
 
     private func setupTableView() {
@@ -40,10 +40,6 @@ class ViewController: UIViewController {
     private func setupNavigationBar() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAlarmButtonTapped))
         navigationItem.rightBarButtonItem?.tintColor = .orange
-    }
-    
-    func autoUiRefresh() {
-        Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(changeBackgroundColor), userInfo: nil, repeats: true)
     }
     
     func startTimer() {
@@ -69,18 +65,16 @@ class ViewController: UIViewController {
         showAlertAction(alarmList[index])
     }
     
-    @objc func changeBackgroundColor() {
-        let color: [UIColor] = [.lightGray, .orange, .yellow, .cyan, .blue, .white]
-        view.backgroundColor = color.randomElement()
-    }
-    
     func showAlertAction(_ alarm: Alarm) {
-        let alert = UIAlertController(title: "알람", message: "\(alarm.ampm) \(alarm.time) 입니다", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "확인", style: .default) { _ in
-            self.tableView.reloadData()
-        }
-        alert.addAction(ok)
-        present(alert, animated: true)
+//        let alert = UIAlertController(title: "알람", message: "\(alarm.ampm) \(alarm.time) 입니다", preferredStyle: .alert)
+//        let ok = UIAlertAction(title: "확인", style: .default) { _ in
+//            self.tableView.reloadData()
+//        }
+//        alert.addAction(ok)
+//        present(alert, animated: true)
+        let alertView = SPAlertView(title: "\(alarm.ampm) \(alarm.time) 입니다!", preset: .done)
+        alertView.duration = 3
+        alertView.present()
     }
 }
 
@@ -106,7 +100,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController: AddingAlarmVCDelegate {
     func appendAlarmData(_ alarm: Alarm) {
         self.alarmList.append(alarm)
-        self.alarmList.sort { $0.dateTime < $1.dateTime }
+        self.alarmList.sort { CustomDateFormatter.shared.formatter.string(from: $0.dateTime) < CustomDateFormatter.shared.formatter.string(from: $1.dateTime) }
         self.tableView.reloadData()
         self.startTimer()
     }
