@@ -41,9 +41,19 @@ class AlarmTableViewCell: UITableViewCell {
         alarmTimeLabel.text = alarm.time
         alarmSwitch.isOn = alarm.isOn
     }
+    
+    func shakingAnimation() {
+        let shakingKeyframe = CAKeyframeAnimation(keyPath: "position.x")
+        shakingKeyframe.values = [0, 5, -5, 5, 2, 2, -2, 0]
+        shakingKeyframe.keyTimes = [0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1]
+        shakingKeyframe.duration = 0.4
+        shakingKeyframe.isAdditive = true // true이면 values가 현재 위치 기준, false이면 values가 Screen좌표 기준
+        self.layer.add(shakingKeyframe, forKey: "shaking")
+    }
 
     @IBAction func alarmSwitchTapped(_ sender: UISwitch) {
         guard let row = row else { return }
+        shakingAnimation()
         delegate?.switchValueChanged(isOn: sender.isOn, row: row)
     }
 }
