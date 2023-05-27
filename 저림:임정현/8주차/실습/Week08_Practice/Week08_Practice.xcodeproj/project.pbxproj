@@ -14,6 +14,7 @@
 		42F35FF52A211F71002A8303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F35FF42A211F71002A8303 /* Assets.xcassets */; };
 		42F35FF82A211F71002A8303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F35FF62A211F71002A8303 /* LaunchScreen.storyboard */; };
 		42F360002A2122F7002A8303 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F35FFF2A2122F7002A8303 /* ResultViewController.swift */; };
+		42F360022A21BF9C002A8303 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F360012A21BF9C002A8303 /* YellowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		42F35FF72A211F71002A8303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42F35FF92A211F71002A8303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42F35FFF2A2122F7002A8303 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		42F360012A21BF9C002A8303 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				42F35FEF2A211F6E002A8303 /* ViewController.swift */,
 				42F35FFF2A2122F7002A8303 /* ResultViewController.swift */,
 				42F35FF12A211F6E002A8303 /* Main.storyboard */,
+				42F360012A21BF9C002A8303 /* YellowViewController.swift */,
 				42F35FF42A211F71002A8303 /* Assets.xcassets */,
 				42F35FF62A211F71002A8303 /* LaunchScreen.storyboard */,
 				42F35FF92A211F71002A8303 /* Info.plist */,
@@ -145,6 +148,7 @@
 				42F35FEC2A211F6E002A8303 /* AppDelegate.swift in Sources */,
 				42F35FEE2A211F6E002A8303 /* SceneDelegate.swift in Sources */,
 				42F360002A2122F7002A8303 /* ResultViewController.swift in Sources */,
+				42F360022A21BF9C002A8303 /* YellowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

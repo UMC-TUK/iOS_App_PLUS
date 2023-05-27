@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fph-H7-gki">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -137,6 +137,47 @@
             </objects>
             <point key="canvasLocation" x="14.503816793893129" y="-27.464788732394368"/>
         </scene>
+        <!--Yellow View Controller-->
+        <scene sceneID="xao-RM-b1g">
+            <objects>
+                <viewController storyboardIdentifier="YellowViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fph-H7-gki" customClass="YellowViewController" customModule="Week08_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C1D-E9-15F">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0N-Wp-G9U">
+                                <rect key="frame" x="76" y="220" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="D9S-11-lpM"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="crj-sQ-1Vv" appends="YES" id="Ucb-qy-fUZ"/>
+                                    <outletCollection property="gestureRecognizers" destination="IuN-HN-0aO" appends="YES" id="2IN-ge-QCI"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NeM-bW-xsJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J0N-Wp-G9U" firstAttribute="leading" secondItem="NeM-bW-xsJ" secondAttribute="leading" constant="76" id="8dQ-1s-nTo"/>
+                            <constraint firstItem="NeM-bW-xsJ" firstAttribute="trailing" secondItem="J0N-Wp-G9U" secondAttribute="trailing" constant="77" id="D17-i4-PEm"/>
+                            <constraint firstItem="J0N-Wp-G9U" firstAttribute="top" secondItem="NeM-bW-xsJ" secondAttribute="top" constant="161" id="IWE-v3-juk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="yellowView" destination="J0N-Wp-G9U" id="xe6-dW-l4m"/>
+                        <outlet property="yellowViewHeightContraint" destination="D9S-11-lpM" id="bUJ-f6-PSX"/>
+                        <outlet property="yellowViewLongPressGestureRecognizer" destination="IuN-HN-0aO" id="xpK-xK-FZn"/>
+                        <outlet property="yellowViewSwipeGestureRecognizer" destination="crj-sQ-1Vv" id="ULh-sZ-hsj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIX-lz-jgU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="crj-sQ-1Vv"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="IuN-HN-0aO"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="638"/>
+        </scene>
         <!--Result View Controller-->
         <scene sceneID="k3g-z1-yB1">
             <objects>
@@ -203,6 +244,9 @@
         <image name="start" width="1280" height="720"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
