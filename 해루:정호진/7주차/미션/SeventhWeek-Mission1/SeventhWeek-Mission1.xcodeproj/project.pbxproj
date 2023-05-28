@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B110FE52A237E02008C99F0 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 3B110FE42A237E02008C99F0 /* Hero */; };
 		3B3BFBE82A17A60A0014B805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3BFBE72A17A60A0014B805 /* AppDelegate.swift */; };
 		3B3BFBEA2A17A60A0014B805 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3BFBE92A17A60A0014B805 /* SceneDelegate.swift */; };
 		3B3BFBEC2A17A60A0014B805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3BFBEB2A17A60A0014B805 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B110FE52A237E02008C99F0 /* Hero in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = "SeventhWeek-Mission1";
+			packageProductDependencies = (
+				3B110FE42A237E02008C99F0 /* Hero */,
+			);
 			productName = "SeventhWeek-Mission1";
 			productReference = 3B3BFBE42A17A60A0014B805 /* SeventhWeek-Mission1.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 3B3BFBDB2A17A60A0014B805;
+			packageReferences = (
+				3B110FE32A237E02008C99F0 /* XCRemoteSwiftPackageReference "Hero" */,
+			);
 			productRefGroup = 3B3BFBE52A17A60A0014B805 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B110FE32A237E02008C99F0 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B110FE42A237E02008C99F0 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B110FE32A237E02008C99F0 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B3BFBDC2A17A60A0014B805 /* Project object */;
 }

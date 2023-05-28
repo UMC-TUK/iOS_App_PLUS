@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 final class ViewController: UIViewController {
     private var infoList: [Info] = []
@@ -15,6 +16,7 @@ final class ViewController: UIViewController {
     @IBOutlet weak var login: UIButton!
     private var checkAuto: Bool = false
     
+    @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +25,13 @@ final class ViewController: UIViewController {
 //            print("\(key): \(value)")
 //            UserDefaults.standard.removeObject(forKey: key)
 //        }
+        
+        settingAutoLayout()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? NewAddController{
-            viewController.delegate = self
-        }
+    private func settingAutoLayout(){
+        stackView.isHeroEnabled = true
+        stackView.hero.id = "targetAnimation"
     }
     
     @IBAction func clickedLogin(_ sender: Any) {
@@ -40,11 +43,19 @@ final class ViewController: UIViewController {
             if !checkAuto{
                 saveMyInfo(data: list[0])
             }
-            self.navigationController?.pushViewController(viewController, animated: true)
+            viewController.modalPresentationStyle = .fullScreen
+            self.present(viewController,animated: true)
         }
         else{
             alertActionCode("ID 또는 PW가 잘못되었습니다.","확인")
         }
+    }
+    
+    @IBAction func clickedCretae(_ sender: Any) {
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "NewAddController") as? NewAddController else { return }
+        viewController.delegate = self
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController,animated: true)
     }
     
     @IBAction func clickedCheckAuto(_ sender: UIButton) {

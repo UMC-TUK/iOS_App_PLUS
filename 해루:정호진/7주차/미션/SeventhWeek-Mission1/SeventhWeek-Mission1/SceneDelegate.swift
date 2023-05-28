@@ -18,17 +18,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let info = load()
         if info.id != "" && info.pw != ""{
+//            for (key,value) in UserDefaults.standard.dictionaryRepresentation(){
+//                print("\(key): \(value)")
+//                UserDefaults.standard.removeObject(forKey: key)
+//            }
+            
             let vc = storyboard.instantiateViewController(withIdentifier: "DoneLoginController") as! DoneLoginController
-            let rootViewController = UINavigationController(rootViewController: vc)
             self.window = UIWindow(windowScene: scene)
-            self.window?.rootViewController = rootViewController
+            self.window?.rootViewController = vc
             self.window?.makeKeyAndVisible()
         }
         else{
             let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-            let rootViewController = UINavigationController(rootViewController: vc)
             self.window = UIWindow(windowScene: scene)
-            self.window?.rootViewController = rootViewController
+            self.window?.rootViewController = vc
             self.window?.makeKeyAndVisible()
         }
         

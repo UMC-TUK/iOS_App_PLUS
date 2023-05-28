@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Hero
 import UIKit
 
 final class NewAddController: UIViewController{
@@ -15,16 +16,27 @@ final class NewAddController: UIViewController{
     @IBOutlet weak var pW: UITextField!
     @IBOutlet weak var iD: UITextField!
     
+    @IBOutlet weak var back: UIButton!
+    @IBOutlet weak var stackvie: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         infoList = load()
         self.iD.addTarget(self, action: #selector(textFieldDidchange), for: .editingChanged)
+        
+        self.isHeroEnabled = true
+        self.hero.modalAnimationType = .selectBy(presenting: .zoom, dismissing: .zoomOut)
+        stackvie.hero.id = "targetAnimation"
+        
     }
     
     private func load() -> [Info]{
         guard let data = UserDefaults.standard.array(forKey: "userInfo") as? [Data] else {return []}
         return data.map { try! JSONDecoder().decode(Info.self, from: $0) }
+    }
+    
+    @IBAction func clickedBack(_ sender: Any) {
+        self.hero.dismissViewController()
     }
     
     @IBAction func clickedCreate(_ sender: Any) {
@@ -47,7 +59,8 @@ final class NewAddController: UIViewController{
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         let ok = UIAlertAction(title: btn, style: .default){ _ in
             if check{
-                self.dismiss(animated: true)
+//                self.dismiss(animated: true)
+                self.hero.dismissViewController()
             }
         }
         
