@@ -1,0 +1,24 @@
+PODS:
+  - Gemini (1.4.0)
+  - Pastel (0.6.0)
+  - TweenKit (1.0.3)
+
+DEPENDENCIES:
+  - Gemini
+  - Pastel
+  - TweenKit
+
+SPEC REPOS:
+  trunk:
+    - Gemini
+    - Pastel
+    - TweenKit
+
+SPEC CHECKSUMS:
+  Gemini: 4ad915cca8805577fe3021e02feeca2b77dcdbfc
+  Pastel: 814f081efbe2859c37e65ee44f396e6e5be88619
+  TweenKit: 7f32dbdda44609be0cfb3fe853af9562cd1e3564
+
+PODFILE CHECKSUM: a9fb7dbae50c0833235bc4a0a7ebe5b69e3603dd
+
+COCOAPODS: 1.11.3

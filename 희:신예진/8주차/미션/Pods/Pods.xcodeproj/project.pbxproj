@@ -1,0 +1,1518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09EC8718EE44ACFE5E64ADB5C9EF2364 /* ReverseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E40FA650E13705FEE305BC19F8223E /* ReverseAction.swift */; };
+		145CCC867CAEC80844E4F1137D79897E /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A90C2D2E05F7DAEA5F2BE479E5C2369D /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-dummy.m */; };
+		1644530B9087632C39A06B30C8371A51 /* CircleRotateAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA104AC392FBDAC5CA87F1A985DAD57 /* CircleRotateAnimatable.swift */; };
+		1700B992223AB3E7410F712CA99D745A /* EasingAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17495FCF819FF4B19989C50A7A3FE2BA /* EasingAnimatable.swift */; };
+		1912A16E53C5367F5C0A5269B013192F /* TweenKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6671F7873B23F8275D23B4758E657A76 /* TweenKit-dummy.m */; };
+		1ABF3063497D422EFD449E0AEE6029A4 /* Gemini-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7905B1FFC76860021D1FCE4CDF6DB50 /* Gemini-dummy.m */; };
+		1BBF4D7C8F0AB61D9414B4F4DC17599A /* GeminiCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F4D1FEE10CF2C90AED363B4160E15 /* GeminiCollectionView.swift */; };
+		2AB3A0333FD7C076508029CE80B1CF71 /* Pods-UMC_seventhweekmission2Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 419B29441E53401923328113068A6801 /* Pods-UMC_seventhweekmission2Tests-dummy.m */; };
+		2E0FCA56B58C1EACCC17AFBC1A2E833B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A04E6F5D39E5AB8388324B16B3B52 /* Math.swift */; };
+		313E56B016048B97AB843060B2373FF2 /* CustomAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C36067FCCE78340B2387744907BC6AE /* CustomAnimatable.swift */; };
+		323B74CF15CBE6F0B08AEEF6C3746657 /* ActionSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294748BC642B234CB8978E684DF566F /* ActionSequence.swift */; };
+		335A82F3DE92994F230B5204DD315091 /* PitchRotationAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973B7152CB45D62CB7C6FD088014061 /* PitchRotationAnimatable.swift */; };
+		341CA286FB94ACD84B287E9C230EEE14 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F52B7EC0F01348C0F913C94347357 /* PastelView.swift */; };
+		388566174D01668D6254BF94B79904B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		3A2FFF70E460D71C9AA61102674EDACE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		3FB108C2CD218689379E0A86E135B990 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		414D10F39C2B8A54A83E1FD88E6A9475 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675559C7E8973F6EAD4C6D99DFE9BD55 /* Animation.swift */; };
+		4CDACE02B0F3FEC16D904F82FE947200 /* Tweenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728812715BD917DED55C72B190C9D24 /* Tweenable.swift */; };
+		4DF4F9DED86BCC2780854A36AADB4F6E /* Pods-UMC_seventhweekmission2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE4CAF31A8861FE179C10146D94D674 /* Pods-UMC_seventhweekmission2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D901EB0E8E860D376E6514F5D5D3579 /* YawRotationAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989BA0096918769D86F610E93541671F /* YawRotationAnimatable.swift */; };
+		5E3D1FE2B71A8A95050F50DA05CAC9E6 /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD772123573496016D89E9F2E8C5AC1E /* Pastel-dummy.m */; };
+		60F6A2ADCB5EAFEFC84AA01E651E4533 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		623F257A6266A5929688FE10A3D6C2CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		62C39CEBBF37BEDEEABF2F77ABBBC6C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		63F40D465E1C6D6DA522BF5C4A605580 /* ActionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024CA32412AC3F84EFCD21CAD5DB009C /* ActionGroup.swift */; };
+		65CBB4BBD05C25160FEA1C2BDADCF6A1 /* GeminiAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF614876E4FE24B1C6F7A8FDE1C4C752 /* GeminiAnimationModel.swift */; };
+		6638D246331476F1C6B2A89410548133 /* CubeAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A93B7CB222EF7297C631515CD40E /* CubeAnimatable.swift */; };
+		67AF6B402C1CBB7A558D46468505B892 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490A6E6F86173492CEC75E54DE255038 /* Easing.swift */; };
+		6ED789EE36AB0A7AFFD480097295AD2E /* Pods-UMC_seventhweekmission2Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BA5F3691C47E3BB5E23A908672F959 /* Pods-UMC_seventhweekmission2Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F03DB5410D1C26C8EF8D5176AB39260 /* RepeatForeverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDB89DC6593ADCCC4FD6A475AA6DF5 /* RepeatForeverAction.swift */; };
+		78E291B68E2A7A10F9B587AD4481CADB /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74109D56EAA374E10DFDAAD1B277EE7 /* PastelPoint.swift */; };
+		7C3A01B795D0910B2FA37A51F10D660F /* TweenKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 591C5AAA1A3BA63FD627CFFD809A3693 /* TweenKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A79169564F51EF15E32C1951308CD0E /* ScaleAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E26EB37C88C0821D75E91C1C51156F /* ScaleAnimatable.swift */; };
+		93166403C1E1F6A4C3D38252B1F23F4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		96AC5BB2CDF17641D8416FB455042843 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF92E9D9EF0B4C6C4D8AD03D3AEDBAF /* UIViewExtension.swift */; };
+		97D1C292F1DA8209A17267A859E6BDF6 /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E104438CAA1E7BD416FF1B19894CAC9 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9852F7A87B55195141ED0747DC20DD66 /* YoyoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3F5780D9DC9C61B5E52E6DE9B1D08 /* YoyoAction.swift */; };
+		98D8206E55448DAF1B93365A14AC3B72 /* RepeatAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C046B7917871273CC58A8DC963C4317 /* RepeatAction.swift */; };
+		9F1A76F96078AED77F58A3E3F2F5FCF8 /* EasingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BBD8E63A14EF5B357C15BF66950C45 /* EasingFunction.swift */; };
+		A31021BDB561E155705DCD509620C2B3 /* UIKit+Tweenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFB18CF9EDED4F5494714931DC9A601 /* UIKit+Tweenable.swift */; };
+		A4CD0227435ABEDEC559434E5663E241 /* BezierAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2118FC8D38A4C7D08940F80F8B4293E /* BezierAction.swift */; };
+		A82DD004E9F4A14E1D9AAC5C3F42643B /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757613CA742F8B318CEA65A04982CBE /* Lazy.swift */; };
+		B2B9C1DDD18273C57C846AF89C7B155D /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BC96C204376C17E1B26E1FF6B2B369 /* Action.swift */; };
+		BBD15B11B998BCBECBCF30D64FD7E8BB /* Gemini-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC511F6F5C51F5D9FC5E5C1BA9BF67F /* Gemini-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C39B5B85A8187BC73414A324B4279B7E /* UIAppearanceAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3EA58A646F3C9E55DD9630801D3A6A /* UIAppearanceAnimatable.swift */; };
+		CA07E9B805827BBC5FDD258A5C360449 /* RunBlockAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4090F2EC069ADC032E964B91A1161825 /* RunBlockAction.swift */; };
+		CD2B76B5B1B2FA1D5A90159AFC6F85E8 /* BezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0822A32DDBF8358966F5A8DFBBE0D495 /* BezierPath.swift */; };
+		D4219527F2BAFBAE1B9A090E9D3A3954 /* CoreGraphics+Tweenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B33F96AF977784B96A9ECCFE904C492 /* CoreGraphics+Tweenable.swift */; };
+		D45966BD5EE6B3F432C9A391C525B836 /* UIBezierPath+BezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2359370C0F86D5E0FA547E8AF426A65F /* UIBezierPath+BezierPath.swift */; };
+		D601F22220D3A2CFD41052C09F3649AD /* DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C5B2730C3DBB81BB7B9CBF5993F2B /* DisplayLink.swift */; };
+		D6B3B83B4CFC9DD9779C4F29240F5AF6 /* RollRotationAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED836CDAE327693DCFAFD6656DE78C8 /* RollRotationAnimatable.swift */; };
+		E04B3A8590D38FC668C362D7B01D12B5 /* ActionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9011EC41518215DB831319259BEDEA78 /* ActionScheduler.swift */; };
+		E3C6BF9B8B4A2A42346272A97C31A02E /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D601C2C7BD7A7DACF9C8EABDCBDB5FC /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E773C1A54E262467066991DA447BB1AE /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD930393432CF66E025073AEBE2C5 /* PastelGradient.swift */; };
+		EA354E9D181E542083770E50C9B88863 /* Pods-UMC_seventhweekmission2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10ECFEE8F0F3261C2E9E6119AB4EAD61 /* Pods-UMC_seventhweekmission2-dummy.m */; };
+		EB21B7D3A2DB02DEC1B20939F1BA90D6 /* GeminiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5456EDAE3C04A2EE1681EA0F4F8C32 /* GeminiCell.swift */; };
+		EBB126DE2556F14ECD18C90AFFABE518 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00283ACE8A568EEA18744D39062D6425 /* PastelLabel.swift */; };
+		F34F8AC348B5CA9577C352A0914F7F04 /* InterpolateAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA614CFF69CDFB644508D9D2E26B982D /* InterpolateAction.swift */; };
+		F440C89EFEEDD8AA346478162818D78E /* ArcAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A273015B6D5AE95925257528066B048 /* ArcAction.swift */; };
+		FCD367AE57714E6A740DCD6CDE37544C /* ActionScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62D639CC191ED8A4CFF6952B81B501 /* ActionScrubber.swift */; };
+		FEA90061160257A3362C637C2EE4481D /* DelayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361291165278D8C901CE7A46D22EDC27 /* DelayAction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23914CAB49ADC875ECE2407CE06C3FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4BD4A165F77386C7C44BC76339DCBAC;
+			remoteInfo = TweenKit;
+		};
+		23F7FD3B3A82EDC0297B9D8956DFA5FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223ACB2993ED61193B95A52611ED34E7;
+			remoteInfo = Pastel;
+		};
+		6C3E93E75CCDAF83BE80AB88330C242E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223ACB2993ED61193B95A52611ED34E7;
+			remoteInfo = Pastel;
+		};
+		70D884382DF9D1AC88E88747CF9557BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB99BE7414822B3A5E6700B53F09D629;
+			remoteInfo = "Pods-UMC_seventhweekmission2";
+		};
+		7F2E34F944CD612A6BA511BFD12A7B5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6AC3B95F2D31FE0816D1936AFDFC4F5;
+			remoteInfo = Gemini;
+		};
+		9001C9684B87104AB12EED8759A94D42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6AC3B95F2D31FE0816D1936AFDFC4F5;
+			remoteInfo = Gemini;
+		};
+		B8620620D18C4AE6735AC7DCD486EE8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4BD4A165F77386C7C44BC76339DCBAC;
+			remoteInfo = TweenKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00283ACE8A568EEA18744D39062D6425 /* PastelLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelLabel.swift; path = Pastel/Classes/PastelLabel.swift; sourceTree = "<group>"; };
+		01C3A2F3941E7C5DC27C42CB4A1BE60F /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		024CA32412AC3F84EFCD21CAD5DB009C /* ActionGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionGroup.swift; path = TweenKit/TweenKit/ActionGroup.swift; sourceTree = "<group>"; };
+		05020729F1012F3E9BA960E0C044790B /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0822A32DDBF8358966F5A8DFBBE0D495 /* BezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BezierPath.swift; path = TweenKit/TweenKit/BezierPath.swift; sourceTree = "<group>"; };
+		0B1C5B2730C3DBB81BB7B9CBF5993F2B /* DisplayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisplayLink.swift; path = TweenKit/TweenKit/DisplayLink.swift; sourceTree = "<group>"; };
+		0C4CE44245DB9AB9DEDE20A21D9ADF3B /* Pods-UMC_seventhweekmission2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_seventhweekmission2.release.xcconfig"; sourceTree = "<group>"; };
+		0E104438CAA1E7BD416FF1B19894CAC9 /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
+		10ECFEE8F0F3261C2E9E6119AB4EAD61 /* Pods-UMC_seventhweekmission2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UMC_seventhweekmission2-dummy.m"; sourceTree = "<group>"; };
+		149066CCCD9B2842398F6FACA9440257 /* Pods-UMC_seventhweekmission2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_seventhweekmission2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		17495FCF819FF4B19989C50A7A3FE2BA /* EasingAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasingAnimatable.swift; path = Gemini/EasingAnimatable.swift; sourceTree = "<group>"; };
+		19FC197F404A8BA41676B529C02685F4 /* TweenKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TweenKit-prefix.pch"; sourceTree = "<group>"; };
+		1A5456EDAE3C04A2EE1681EA0F4F8C32 /* GeminiCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeminiCell.swift; path = Gemini/GeminiCell.swift; sourceTree = "<group>"; };
+		1AE4CAF31A8861FE179C10146D94D674 /* Pods-UMC_seventhweekmission2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UMC_seventhweekmission2-umbrella.h"; sourceTree = "<group>"; };
+		1DAABA5592523F2217FBD2CD9CE6EE25 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		1F90A93B7CB222EF7297C631515CD40E /* CubeAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CubeAnimatable.swift; path = Gemini/CubeAnimatable.swift; sourceTree = "<group>"; };
+		20E26EB37C88C0821D75E91C1C51156F /* ScaleAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScaleAnimatable.swift; path = Gemini/ScaleAnimatable.swift; sourceTree = "<group>"; };
+		22BA5F3691C47E3BB5E23A908672F959 /* Pods-UMC_seventhweekmission2Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UMC_seventhweekmission2Tests-umbrella.h"; sourceTree = "<group>"; };
+		2359370C0F86D5E0FA547E8AF426A65F /* UIBezierPath+BezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBezierPath+BezierPath.swift"; path = "TweenKit/TweenKit/UIBezierPath+BezierPath.swift"; sourceTree = "<group>"; };
+		2AA104AC392FBDAC5CA87F1A985DAD57 /* CircleRotateAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleRotateAnimatable.swift; path = Gemini/CircleRotateAnimatable.swift; sourceTree = "<group>"; };
+		2B33F96AF977784B96A9ECCFE904C492 /* CoreGraphics+Tweenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreGraphics+Tweenable.swift"; path = "TweenKit/TweenKit/CoreGraphics+Tweenable.swift"; sourceTree = "<group>"; };
+		2F762298C5F6DFF6F2B4EECE8FB9BE3C /* Gemini.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gemini.debug.xcconfig; sourceTree = "<group>"; };
+		34BC96C204376C17E1B26E1FF6B2B369 /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = TweenKit/TweenKit/Action.swift; sourceTree = "<group>"; };
+		361291165278D8C901CE7A46D22EDC27 /* DelayAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelayAction.swift; path = TweenKit/TweenKit/DelayAction.swift; sourceTree = "<group>"; };
+		39A8CB4E631EDB10606BCF6597CDA3A3 /* TweenKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TweenKit.release.xcconfig; sourceTree = "<group>"; };
+		3B3A04E6F5D39E5AB8388324B16B3B52 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Math.swift; path = TweenKit/TweenKit/Math.swift; sourceTree = "<group>"; };
+		3D601C2C7BD7A7DACF9C8EABDCBDB5FC /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-umbrella.h"; sourceTree = "<group>"; };
+		4090F2EC069ADC032E964B91A1161825 /* RunBlockAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RunBlockAction.swift; path = TweenKit/TweenKit/RunBlockAction.swift; sourceTree = "<group>"; };
+		419B29441E53401923328113068A6801 /* Pods-UMC_seventhweekmission2Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UMC_seventhweekmission2Tests-dummy.m"; sourceTree = "<group>"; };
+		424F52B7EC0F01348C0F913C94347357 /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
+		466B11B5BACD97597EEF78890D8519D0 /* Pods-UMC_seventhweekmission2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_seventhweekmission2.debug.xcconfig"; sourceTree = "<group>"; };
+		4830814C7E6A476937C1FA3EE34B7A46 /* Pods-UMC_seventhweekmission2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_seventhweekmission2-Info.plist"; sourceTree = "<group>"; };
+		490A6E6F86173492CEC75E54DE255038 /* Easing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Easing.swift; path = TweenKit/TweenKit/Easing.swift; sourceTree = "<group>"; };
+		4E79958862A94A99F0A40F883CEB810E /* Gemini */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gemini; path = Gemini.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AE62716685B78E933BAB29F1E91BE5 /* Gemini-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gemini-prefix.pch"; sourceTree = "<group>"; };
+		57402B83A9695DEDF538B2DB59D503D6 /* Pastel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pastel-Info.plist"; sourceTree = "<group>"; };
+		591C5AAA1A3BA63FD627CFFD809A3693 /* TweenKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TweenKit-umbrella.h"; sourceTree = "<group>"; };
+		597AAC3588E439072E6BDE793A69F4A4 /* Pods-UMC_seventhweekmission2Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UMC_seventhweekmission2Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A08E847AC0F375461D754CDD7306ED0 /* Pods-UMC_seventhweekmission2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UMC_seventhweekmission2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A273015B6D5AE95925257528066B048 /* ArcAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArcAction.swift; path = TweenKit/TweenKit/ArcAction.swift; sourceTree = "<group>"; };
+		5C046B7917871273CC58A8DC963C4317 /* RepeatAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RepeatAction.swift; path = TweenKit/TweenKit/RepeatAction.swift; sourceTree = "<group>"; };
+		5EB9A6EAF2FEA5E26A0A33F6582409D4 /* Pods-UMC_seventhweekmission2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_seventhweekmission2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5EEDD46DFDA52AC8D5202CC225C4FB61 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-Info.plist"; sourceTree = "<group>"; };
+		6671F7873B23F8275D23B4758E657A76 /* TweenKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TweenKit-dummy.m"; sourceTree = "<group>"; };
+		675559C7E8973F6EAD4C6D99DFE9BD55 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = TweenKit/TweenKit/Animation.swift; sourceTree = "<group>"; };
+		6973B7152CB45D62CB7C6FD088014061 /* PitchRotationAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitchRotationAnimatable.swift; path = Gemini/PitchRotationAnimatable.swift; sourceTree = "<group>"; };
+		6B8209EB8D74295ABB08A75E113B7CED /* Pods-UMC_seventhweekmission2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UMC_seventhweekmission2.modulemap"; sourceTree = "<group>"; };
+		7CF92E9D9EF0B4C6C4D8AD03D3AEDBAF /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Gemini/UIViewExtension.swift; sourceTree = "<group>"; };
+		7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8294748BC642B234CB8978E684DF566F /* ActionSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSequence.swift; path = TweenKit/TweenKit/ActionSequence.swift; sourceTree = "<group>"; };
+		890EA79F6DF97DE1AED7427762BC5DB8 /* Pods-UMC_seventhweekmission2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_seventhweekmission2-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C36067FCCE78340B2387744907BC6AE /* CustomAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomAnimatable.swift; path = Gemini/CustomAnimatable.swift; sourceTree = "<group>"; };
+		8DC3F5780D9DC9C61B5E52E6DE9B1D08 /* YoyoAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoyoAction.swift; path = TweenKit/TweenKit/YoyoAction.swift; sourceTree = "<group>"; };
+		8EB821DC69E03404FF0628ECA157BB03 /* TweenKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TweenKit; path = TweenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9011EC41518215DB831319259BEDEA78 /* ActionScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionScheduler.swift; path = TweenKit/TweenKit/ActionScheduler.swift; sourceTree = "<group>"; };
+		906C74D600014257485FBBABE28FAC64 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests"; path = Pods_UMC_seventhweekmission2_UMC_seventhweekmission2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BBD8E63A14EF5B357C15BF66950C45 /* EasingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasingFunction.swift; path = Gemini/EasingFunction.swift; sourceTree = "<group>"; };
+		989BA0096918769D86F610E93541671F /* YawRotationAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YawRotationAnimatable.swift; path = Gemini/YawRotationAnimatable.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ED836CDAE327693DCFAFD6656DE78C8 /* RollRotationAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RollRotationAnimatable.swift; path = Gemini/RollRotationAnimatable.swift; sourceTree = "<group>"; };
+		A2118FC8D38A4C7D08940F80F8B4293E /* BezierAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BezierAction.swift; path = TweenKit/TweenKit/BezierAction.swift; sourceTree = "<group>"; };
+		A68E84B6DCDF4FCDC2AE572CEFF0DBF8 /* TweenKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TweenKit-Info.plist"; sourceTree = "<group>"; };
+		A90C2D2E05F7DAEA5F2BE479E5C2369D /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-dummy.m"; sourceTree = "<group>"; };
+		A91FAC01F98C50C83DA31D55A5D86E47 /* Pods-UMC_seventhweekmission2Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_seventhweekmission2Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AE810BAE3222BA8CA89F7E9CB6549D74 /* Pods-UMC_seventhweekmission2 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UMC_seventhweekmission2"; path = Pods_UMC_seventhweekmission2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFEDB89DC6593ADCCC4FD6A475AA6DF5 /* RepeatForeverAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RepeatForeverAction.swift; path = TweenKit/TweenKit/RepeatForeverAction.swift; sourceTree = "<group>"; };
+		B82CEA996BFEC99367FA3CF2DC191A27 /* Pods-UMC_seventhweekmission2Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_seventhweekmission2Tests-Info.plist"; sourceTree = "<group>"; };
+		B923B798C4EB346141BC817FB0CAC3FA /* Pods-UMC_seventhweekmission2Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UMC_seventhweekmission2Tests"; path = Pods_UMC_seventhweekmission2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0CD930393432CF66E025073AEBE2C5 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
+		BD772123573496016D89E9F2E8C5AC1E /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
+		BF614876E4FE24B1C6F7A8FDE1C4C752 /* GeminiAnimationModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeminiAnimationModel.swift; path = Gemini/GeminiAnimationModel.swift; sourceTree = "<group>"; };
+		C0C587E82B0F780791CB9CE3A61D9D02 /* TweenKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TweenKit.debug.xcconfig; sourceTree = "<group>"; };
+		C22B5C3C17D4CDFAAA3C3F02DA5EAF9A /* TweenKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TweenKit.modulemap; sourceTree = "<group>"; };
+		C3E40FA650E13705FEE305BC19F8223E /* ReverseAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReverseAction.swift; path = TweenKit/TweenKit/ReverseAction.swift; sourceTree = "<group>"; };
+		C705067A0507B2D17547CF8650866745 /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
+		C728812715BD917DED55C72B190C9D24 /* Tweenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tweenable.swift; path = TweenKit/TweenKit/Tweenable.swift; sourceTree = "<group>"; };
+		C74109D56EAA374E10DFDAAD1B277EE7 /* PastelPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelPoint.swift; path = Pastel/Classes/PastelPoint.swift; sourceTree = "<group>"; };
+		C757613CA742F8B318CEA65A04982CBE /* Lazy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lazy.swift; path = TweenKit/TweenKit/Lazy.swift; sourceTree = "<group>"; };
+		CA614CFF69CDFB644508D9D2E26B982D /* InterpolateAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpolateAction.swift; path = TweenKit/TweenKit/InterpolateAction.swift; sourceTree = "<group>"; };
+		CEC2E2025C677A681B71777ACB1A27C5 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-frameworks.sh"; sourceTree = "<group>"; };
+		CEF15EC05A8C3A5D3A8FD7BB51A280DB /* Pods-UMC_seventhweekmission2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UMC_seventhweekmission2-frameworks.sh"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D74F4D1FEE10CF2C90AED363B4160E15 /* GeminiCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeminiCollectionView.swift; path = Gemini/GeminiCollectionView.swift; sourceTree = "<group>"; };
+		D7905B1FFC76860021D1FCE4CDF6DB50 /* Gemini-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gemini-dummy.m"; sourceTree = "<group>"; };
+		DF3EA58A646F3C9E55DD9630801D3A6A /* UIAppearanceAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIAppearanceAnimatable.swift; path = Gemini/UIAppearanceAnimatable.swift; sourceTree = "<group>"; };
+		E3336B936FDC145D7C53C84D827E5AFE /* Pods-UMC_seventhweekmission2Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UMC_seventhweekmission2Tests.modulemap"; sourceTree = "<group>"; };
+		E59DB5008E658DF2DD84AA9E2735C038 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.modulemap"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EAC511F6F5C51F5D9FC5E5C1BA9BF67F /* Gemini-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gemini-umbrella.h"; sourceTree = "<group>"; };
+		EB5BC2C317FF70491BD52EC23EF220B2 /* Gemini.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Gemini.modulemap; sourceTree = "<group>"; };
+		EDE144BDE02C9FE1540467AE1E9F1EBA /* Gemini-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Gemini-Info.plist"; sourceTree = "<group>"; };
+		EDEBF0534E9ADE00B8D50A7D69C59C25 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EDFB18CF9EDED4F5494714931DC9A601 /* UIKit+Tweenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Tweenable.swift"; path = "TweenKit/TweenKit/UIKit+Tweenable.swift"; sourceTree = "<group>"; };
+		F35B728E713B3C4D8F56EC8CC7701F9F /* Pastel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.release.xcconfig; sourceTree = "<group>"; };
+		F55E23D6AFE8528979D5BAD9EC53EB22 /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pastel.modulemap; sourceTree = "<group>"; };
+		FC62D639CC191ED8A4CFF6952B81B501 /* ActionScrubber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionScrubber.swift; path = TweenKit/TweenKit/ActionScrubber.swift; sourceTree = "<group>"; };
+		FDF11331F6CD83C023F9B60F13BB7F71 /* Gemini.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gemini.release.xcconfig; sourceTree = "<group>"; };
+		FEE5092F4BCD7E9E3C3B5F9B81C2BF13 /* Pastel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14BE8C6F9389C39AA80814B3E05BCF3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2FFF70E460D71C9AA61102674EDACE /* Foundation.framework in Frameworks */,
+				3FB108C2CD218689379E0A86E135B990 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F926DDBB71D6D5C67955686BA1A16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93166403C1E1F6A4C3D38252B1F23F4C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3663F1B3DDE072E9151016CEA98C3AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388566174D01668D6254BF94B79904B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A079994F7D8F29A89F110E5ABE74CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F6A2ADCB5EAFEFC84AA01E651E4533 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7342E40D48F8E93F3DC3E48EFC15681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C39CEBBF37BEDEEABF2F77ABBBC6C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62F5C587A1FC6F4F7DED87652D2F963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623F257A6266A5929688FE10A3D6C2CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0494990441172557461E593E1C312771 /* Gemini */ = {
+			isa = PBXGroup;
+			children = (
+				2AA104AC392FBDAC5CA87F1A985DAD57 /* CircleRotateAnimatable.swift */,
+				1F90A93B7CB222EF7297C631515CD40E /* CubeAnimatable.swift */,
+				8C36067FCCE78340B2387744907BC6AE /* CustomAnimatable.swift */,
+				17495FCF819FF4B19989C50A7A3FE2BA /* EasingAnimatable.swift */,
+				96BBD8E63A14EF5B357C15BF66950C45 /* EasingFunction.swift */,
+				BF614876E4FE24B1C6F7A8FDE1C4C752 /* GeminiAnimationModel.swift */,
+				1A5456EDAE3C04A2EE1681EA0F4F8C32 /* GeminiCell.swift */,
+				D74F4D1FEE10CF2C90AED363B4160E15 /* GeminiCollectionView.swift */,
+				6973B7152CB45D62CB7C6FD088014061 /* PitchRotationAnimatable.swift */,
+				9ED836CDAE327693DCFAFD6656DE78C8 /* RollRotationAnimatable.swift */,
+				20E26EB37C88C0821D75E91C1C51156F /* ScaleAnimatable.swift */,
+				DF3EA58A646F3C9E55DD9630801D3A6A /* UIAppearanceAnimatable.swift */,
+				7CF92E9D9EF0B4C6C4D8AD03D3AEDBAF /* UIViewExtension.swift */,
+				989BA0096918769D86F610E93541671F /* YawRotationAnimatable.swift */,
+				91BDACBFA3D608C86705C1AD96D454B9 /* Support Files */,
+			);
+			name = Gemini;
+			path = Gemini;
+			sourceTree = "<group>";
+		};
+		0FE712696DA1B9C5F2379944580EC006 /* TweenKit */ = {
+			isa = PBXGroup;
+			children = (
+				34BC96C204376C17E1B26E1FF6B2B369 /* Action.swift */,
+				024CA32412AC3F84EFCD21CAD5DB009C /* ActionGroup.swift */,
+				9011EC41518215DB831319259BEDEA78 /* ActionScheduler.swift */,
+				FC62D639CC191ED8A4CFF6952B81B501 /* ActionScrubber.swift */,
+				8294748BC642B234CB8978E684DF566F /* ActionSequence.swift */,
+				675559C7E8973F6EAD4C6D99DFE9BD55 /* Animation.swift */,
+				5A273015B6D5AE95925257528066B048 /* ArcAction.swift */,
+				A2118FC8D38A4C7D08940F80F8B4293E /* BezierAction.swift */,
+				0822A32DDBF8358966F5A8DFBBE0D495 /* BezierPath.swift */,
+				2B33F96AF977784B96A9ECCFE904C492 /* CoreGraphics+Tweenable.swift */,
+				361291165278D8C901CE7A46D22EDC27 /* DelayAction.swift */,
+				0B1C5B2730C3DBB81BB7B9CBF5993F2B /* DisplayLink.swift */,
+				490A6E6F86173492CEC75E54DE255038 /* Easing.swift */,
+				CA614CFF69CDFB644508D9D2E26B982D /* InterpolateAction.swift */,
+				C757613CA742F8B318CEA65A04982CBE /* Lazy.swift */,
+				3B3A04E6F5D39E5AB8388324B16B3B52 /* Math.swift */,
+				5C046B7917871273CC58A8DC963C4317 /* RepeatAction.swift */,
+				AFEDB89DC6593ADCCC4FD6A475AA6DF5 /* RepeatForeverAction.swift */,
+				C3E40FA650E13705FEE305BC19F8223E /* ReverseAction.swift */,
+				4090F2EC069ADC032E964B91A1161825 /* RunBlockAction.swift */,
+				C728812715BD917DED55C72B190C9D24 /* Tweenable.swift */,
+				2359370C0F86D5E0FA547E8AF426A65F /* UIBezierPath+BezierPath.swift */,
+				EDFB18CF9EDED4F5494714931DC9A601 /* UIKit+Tweenable.swift */,
+				8DC3F5780D9DC9C61B5E52E6DE9B1D08 /* YoyoAction.swift */,
+				95406CE02F345BC32D5C69022FF79D45 /* Support Files */,
+			);
+			name = TweenKit;
+			path = TweenKit;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34F91068B836C346FD24562D35F667CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F55E23D6AFE8528979D5BAD9EC53EB22 /* Pastel.modulemap */,
+				BD772123573496016D89E9F2E8C5AC1E /* Pastel-dummy.m */,
+				57402B83A9695DEDF538B2DB59D503D6 /* Pastel-Info.plist */,
+				C705067A0507B2D17547CF8650866745 /* Pastel-prefix.pch */,
+				0E104438CAA1E7BD416FF1B19894CAC9 /* Pastel-umbrella.h */,
+				FEE5092F4BCD7E9E3C3B5F9B81C2BF13 /* Pastel.debug.xcconfig */,
+				F35B728E713B3C4D8F56EC8CC7701F9F /* Pastel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pastel";
+			sourceTree = "<group>";
+		};
+		40BF1CF4E88C1F83A058F3E33F5731AA /* Pastel */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CD930393432CF66E025073AEBE2C5 /* PastelGradient.swift */,
+				00283ACE8A568EEA18744D39062D6425 /* PastelLabel.swift */,
+				C74109D56EAA374E10DFDAAD1B277EE7 /* PastelPoint.swift */,
+				424F52B7EC0F01348C0F913C94347357 /* PastelView.swift */,
+				34F91068B836C346FD24562D35F667CC /* Support Files */,
+			);
+			name = Pastel;
+			path = Pastel;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5DA1972D1D46C4CE860E8687E2335D16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E79958862A94A99F0A40F883CEB810E /* Gemini */,
+				7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel */,
+				AE810BAE3222BA8CA89F7E9CB6549D74 /* Pods-UMC_seventhweekmission2 */,
+				906C74D600014257485FBBABE28FAC64 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests */,
+				B923B798C4EB346141BC817FB0CAC3FA /* Pods-UMC_seventhweekmission2Tests */,
+				8EB821DC69E03404FF0628ECA157BB03 /* TweenKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91BDACBFA3D608C86705C1AD96D454B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB5BC2C317FF70491BD52EC23EF220B2 /* Gemini.modulemap */,
+				D7905B1FFC76860021D1FCE4CDF6DB50 /* Gemini-dummy.m */,
+				EDE144BDE02C9FE1540467AE1E9F1EBA /* Gemini-Info.plist */,
+				54AE62716685B78E933BAB29F1E91BE5 /* Gemini-prefix.pch */,
+				EAC511F6F5C51F5D9FC5E5C1BA9BF67F /* Gemini-umbrella.h */,
+				2F762298C5F6DFF6F2B4EECE8FB9BE3C /* Gemini.debug.xcconfig */,
+				FDF11331F6CD83C023F9B60F13BB7F71 /* Gemini.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Gemini";
+			sourceTree = "<group>";
+		};
+		95406CE02F345BC32D5C69022FF79D45 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C22B5C3C17D4CDFAAA3C3F02DA5EAF9A /* TweenKit.modulemap */,
+				6671F7873B23F8275D23B4758E657A76 /* TweenKit-dummy.m */,
+				A68E84B6DCDF4FCDC2AE572CEFF0DBF8 /* TweenKit-Info.plist */,
+				19FC197F404A8BA41676B529C02685F4 /* TweenKit-prefix.pch */,
+				591C5AAA1A3BA63FD627CFFD809A3693 /* TweenKit-umbrella.h */,
+				C0C587E82B0F780791CB9CE3A61D9D02 /* TweenKit.debug.xcconfig */,
+				39A8CB4E631EDB10606BCF6597CDA3A3 /* TweenKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TweenKit";
+			sourceTree = "<group>";
+		};
+		B02E745A706A169F95F399EDE9417EDC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9E48EFCD67B26F0526F79B67911C0 /* Pods-UMC_seventhweekmission2 */,
+				FB3E8027B60A10A484D1CE740D7CD286 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests */,
+				ED74AB5222AB7AA537865615B6582936 /* Pods-UMC_seventhweekmission2Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C6D9E48EFCD67B26F0526F79B67911C0 /* Pods-UMC_seventhweekmission2 */ = {
+			isa = PBXGroup;
+			children = (
+				6B8209EB8D74295ABB08A75E113B7CED /* Pods-UMC_seventhweekmission2.modulemap */,
+				5A08E847AC0F375461D754CDD7306ED0 /* Pods-UMC_seventhweekmission2-acknowledgements.markdown */,
+				890EA79F6DF97DE1AED7427762BC5DB8 /* Pods-UMC_seventhweekmission2-acknowledgements.plist */,
+				10ECFEE8F0F3261C2E9E6119AB4EAD61 /* Pods-UMC_seventhweekmission2-dummy.m */,
+				CEF15EC05A8C3A5D3A8FD7BB51A280DB /* Pods-UMC_seventhweekmission2-frameworks.sh */,
+				4830814C7E6A476937C1FA3EE34B7A46 /* Pods-UMC_seventhweekmission2-Info.plist */,
+				1AE4CAF31A8861FE179C10146D94D674 /* Pods-UMC_seventhweekmission2-umbrella.h */,
+				466B11B5BACD97597EEF78890D8519D0 /* Pods-UMC_seventhweekmission2.debug.xcconfig */,
+				0C4CE44245DB9AB9DEDE20A21D9ADF3B /* Pods-UMC_seventhweekmission2.release.xcconfig */,
+			);
+			name = "Pods-UMC_seventhweekmission2";
+			path = "Target Support Files/Pods-UMC_seventhweekmission2";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				EEB95BB8866C3BEAA34E1CF050C6E054 /* Pods */,
+				5DA1972D1D46C4CE860E8687E2335D16 /* Products */,
+				B02E745A706A169F95F399EDE9417EDC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ED74AB5222AB7AA537865615B6582936 /* Pods-UMC_seventhweekmission2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E3336B936FDC145D7C53C84D827E5AFE /* Pods-UMC_seventhweekmission2Tests.modulemap */,
+				597AAC3588E439072E6BDE793A69F4A4 /* Pods-UMC_seventhweekmission2Tests-acknowledgements.markdown */,
+				A91FAC01F98C50C83DA31D55A5D86E47 /* Pods-UMC_seventhweekmission2Tests-acknowledgements.plist */,
+				419B29441E53401923328113068A6801 /* Pods-UMC_seventhweekmission2Tests-dummy.m */,
+				B82CEA996BFEC99367FA3CF2DC191A27 /* Pods-UMC_seventhweekmission2Tests-Info.plist */,
+				22BA5F3691C47E3BB5E23A908672F959 /* Pods-UMC_seventhweekmission2Tests-umbrella.h */,
+				149066CCCD9B2842398F6FACA9440257 /* Pods-UMC_seventhweekmission2Tests.debug.xcconfig */,
+				5EB9A6EAF2FEA5E26A0A33F6582409D4 /* Pods-UMC_seventhweekmission2Tests.release.xcconfig */,
+			);
+			name = "Pods-UMC_seventhweekmission2Tests";
+			path = "Target Support Files/Pods-UMC_seventhweekmission2Tests";
+			sourceTree = "<group>";
+		};
+		EEB95BB8866C3BEAA34E1CF050C6E054 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0494990441172557461E593E1C312771 /* Gemini */,
+				40BF1CF4E88C1F83A058F3E33F5731AA /* Pastel */,
+				0FE712696DA1B9C5F2379944580EC006 /* TweenKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB3E8027B60A10A484D1CE740D7CD286 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E59DB5008E658DF2DD84AA9E2735C038 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.modulemap */,
+				05020729F1012F3E9BA960E0C044790B /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-acknowledgements.markdown */,
+				EDEBF0534E9ADE00B8D50A7D69C59C25 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-acknowledgements.plist */,
+				A90C2D2E05F7DAEA5F2BE479E5C2369D /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-dummy.m */,
+				CEC2E2025C677A681B71777ACB1A27C5 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-frameworks.sh */,
+				5EEDD46DFDA52AC8D5202CC225C4FB61 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-Info.plist */,
+				3D601C2C7BD7A7DACF9C8EABDCBDB5FC /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-umbrella.h */,
+				01C3A2F3941E7C5DC27C42CB4A1BE60F /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.debug.xcconfig */,
+				1DAABA5592523F2217FBD2CD9CE6EE25 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.release.xcconfig */,
+			);
+			name = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests";
+			path = "Target Support Files/Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		148E1E03CB31BC08ED6C0FD3A5777570 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED789EE36AB0A7AFFD480097295AD2E /* Pods-UMC_seventhweekmission2Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C87FE6FEFC330F3A07164CCA6B1C193 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3A01B795D0910B2FA37A51F10D660F /* TweenKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F142040D57BF025EF1AB04D3B7134D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF4F9DED86BCC2780854A36AADB4F6E /* Pods-UMC_seventhweekmission2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55CAA38D768F2617E0AF34B23D18A2F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D1C292F1DA8209A17267A859E6BDF6 /* Pastel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE1A6B78A81D70B55E01806892097DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD15B11B998BCBECBCF30D64FD7E8BB /* Gemini-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FB7C81FBB0CCD7CFED95F19D00BE8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C6BF9B8B4A2A42346272A97C31A02E /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		223ACB2993ED61193B95A52611ED34E7 /* Pastel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391D83321B48768745DD4E3C7A72FD5E /* Build configuration list for PBXNativeTarget "Pastel" */;
+			buildPhases = (
+				55CAA38D768F2617E0AF34B23D18A2F6 /* Headers */,
+				6E9C48196C1237912646C55E2762EB0B /* Sources */,
+				B7342E40D48F8E93F3DC3E48EFC15681 /* Frameworks */,
+				9C69B2C722948927A85ACC0EB0D41767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pastel;
+			productName = Pastel;
+			productReference = 7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel */;
+			productType = "com.apple.product-type.framework";
+		};
+		270196557C79A417B833489BA7B4F280 /* Pods-UMC_seventhweekmission2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2C4DB42FA74BE01736E877C2A1B5DF /* Build configuration list for PBXNativeTarget "Pods-UMC_seventhweekmission2Tests" */;
+			buildPhases = (
+				148E1E03CB31BC08ED6C0FD3A5777570 /* Headers */,
+				1D19243EB9CA6575FCCE68A0CBA6A3B8 /* Sources */,
+				8A079994F7D8F29A89F110E5ABE74CD1 /* Frameworks */,
+				86079B0469221281B1E31F1CE549711A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D94EE35C1AB157EF7117857B15C770A /* PBXTargetDependency */,
+			);
+			name = "Pods-UMC_seventhweekmission2Tests";
+			productName = Pods_UMC_seventhweekmission2Tests;
+			productReference = B923B798C4EB346141BC817FB0CAC3FA /* Pods-UMC_seventhweekmission2Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D43F601A8DC4833B238F1648CE00894 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD1B4F295D20E6E34E95FA4E676A8E4 /* Build configuration list for PBXNativeTarget "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests" */;
+			buildPhases = (
+				99FB7C81FBB0CCD7CFED95F19D00BE8D /* Headers */,
+				1BEBF1DEDFB092F5C46A77A889B86BC0 /* Sources */,
+				C62F5C587A1FC6F4F7DED87652D2F963 /* Frameworks */,
+				2A745181EF6F1ED94E3877BB073BEC49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				927B336D1D25606F972F480249824977 /* PBXTargetDependency */,
+				310EBBE4BE4FD9053DFB5D89E5C60FF6 /* PBXTargetDependency */,
+				9A6A133D57ACA56EFE280EDE2F28C8A2 /* PBXTargetDependency */,
+			);
+			name = "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests";
+			productName = Pods_UMC_seventhweekmission2_UMC_seventhweekmission2UITests;
+			productReference = 906C74D600014257485FBBABE28FAC64 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6AC3B95F2D31FE0816D1936AFDFC4F5 /* Gemini */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6475238BB09AAF0FB50939C40809CC87 /* Build configuration list for PBXNativeTarget "Gemini" */;
+			buildPhases = (
+				8EE1A6B78A81D70B55E01806892097DB /* Headers */,
+				9E81C879DAED884F5AC60615C2EA7616 /* Sources */,
+				3663F1B3DDE072E9151016CEA98C3AD1 /* Frameworks */,
+				796ABDBDF4E76B48EA2E3E299981B259 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gemini;
+			productName = Gemini;
+			productReference = 4E79958862A94A99F0A40F883CEB810E /* Gemini */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB99BE7414822B3A5E6700B53F09D629 /* Pods-UMC_seventhweekmission2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B515321137D1C46D4202CB2DB5E2AC37 /* Build configuration list for PBXNativeTarget "Pods-UMC_seventhweekmission2" */;
+			buildPhases = (
+				4F142040D57BF025EF1AB04D3B7134D2 /* Headers */,
+				973B88DDD37E534D8579502870F6D185 /* Sources */,
+				30F926DDBB71D6D5C67955686BA1A16A /* Frameworks */,
+				5A861D6E73F3EC5EC76E19A1845B9AE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				576CBFBDD0701914359CD351B1E64F96 /* PBXTargetDependency */,
+				987BAD6F436B46161BC5526AF4A65CCA /* PBXTargetDependency */,
+				3111FC39D60FD4927FAE152C335A5DE6 /* PBXTargetDependency */,
+			);
+			name = "Pods-UMC_seventhweekmission2";
+			productName = Pods_UMC_seventhweekmission2;
+			productReference = AE810BAE3222BA8CA89F7E9CB6549D74 /* Pods-UMC_seventhweekmission2 */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4BD4A165F77386C7C44BC76339DCBAC /* TweenKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2883E1BF894629E45CD5EC3E77DF14AB /* Build configuration list for PBXNativeTarget "TweenKit" */;
+			buildPhases = (
+				4C87FE6FEFC330F3A07164CCA6B1C193 /* Headers */,
+				8ADD9276F8AE88D8429F0930892C31CB /* Sources */,
+				14BE8C6F9389C39AA80814B3E05BCF3A /* Frameworks */,
+				D878B93B77D21FCA61689B1FF5D5BE5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweenKit;
+			productName = TweenKit;
+			productReference = 8EB821DC69E03404FF0628ECA157BB03 /* TweenKit */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5DA1972D1D46C4CE860E8687E2335D16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6AC3B95F2D31FE0816D1936AFDFC4F5 /* Gemini */,
+				223ACB2993ED61193B95A52611ED34E7 /* Pastel */,
+				DB99BE7414822B3A5E6700B53F09D629 /* Pods-UMC_seventhweekmission2 */,
+				4D43F601A8DC4833B238F1648CE00894 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests */,
+				270196557C79A417B833489BA7B4F280 /* Pods-UMC_seventhweekmission2Tests */,
+				E4BD4A165F77386C7C44BC76339DCBAC /* TweenKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A745181EF6F1ED94E3877BB073BEC49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A861D6E73F3EC5EC76E19A1845B9AE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796ABDBDF4E76B48EA2E3E299981B259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86079B0469221281B1E31F1CE549711A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C69B2C722948927A85ACC0EB0D41767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D878B93B77D21FCA61689B1FF5D5BE5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BEBF1DEDFB092F5C46A77A889B86BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145CCC867CAEC80844E4F1137D79897E /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D19243EB9CA6575FCCE68A0CBA6A3B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB3A0333FD7C076508029CE80B1CF71 /* Pods-UMC_seventhweekmission2Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9C48196C1237912646C55E2762EB0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E3D1FE2B71A8A95050F50DA05CAC9E6 /* Pastel-dummy.m in Sources */,
+				E773C1A54E262467066991DA447BB1AE /* PastelGradient.swift in Sources */,
+				EBB126DE2556F14ECD18C90AFFABE518 /* PastelLabel.swift in Sources */,
+				78E291B68E2A7A10F9B587AD4481CADB /* PastelPoint.swift in Sources */,
+				341CA286FB94ACD84B287E9C230EEE14 /* PastelView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ADD9276F8AE88D8429F0930892C31CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B9C1DDD18273C57C846AF89C7B155D /* Action.swift in Sources */,
+				63F40D465E1C6D6DA522BF5C4A605580 /* ActionGroup.swift in Sources */,
+				E04B3A8590D38FC668C362D7B01D12B5 /* ActionScheduler.swift in Sources */,
+				FCD367AE57714E6A740DCD6CDE37544C /* ActionScrubber.swift in Sources */,
+				323B74CF15CBE6F0B08AEEF6C3746657 /* ActionSequence.swift in Sources */,
+				414D10F39C2B8A54A83E1FD88E6A9475 /* Animation.swift in Sources */,
+				F440C89EFEEDD8AA346478162818D78E /* ArcAction.swift in Sources */,
+				A4CD0227435ABEDEC559434E5663E241 /* BezierAction.swift in Sources */,
+				CD2B76B5B1B2FA1D5A90159AFC6F85E8 /* BezierPath.swift in Sources */,
+				D4219527F2BAFBAE1B9A090E9D3A3954 /* CoreGraphics+Tweenable.swift in Sources */,
+				FEA90061160257A3362C637C2EE4481D /* DelayAction.swift in Sources */,
+				D601F22220D3A2CFD41052C09F3649AD /* DisplayLink.swift in Sources */,
+				67AF6B402C1CBB7A558D46468505B892 /* Easing.swift in Sources */,
+				F34F8AC348B5CA9577C352A0914F7F04 /* InterpolateAction.swift in Sources */,
+				A82DD004E9F4A14E1D9AAC5C3F42643B /* Lazy.swift in Sources */,
+				2E0FCA56B58C1EACCC17AFBC1A2E833B /* Math.swift in Sources */,
+				98D8206E55448DAF1B93365A14AC3B72 /* RepeatAction.swift in Sources */,
+				6F03DB5410D1C26C8EF8D5176AB39260 /* RepeatForeverAction.swift in Sources */,
+				09EC8718EE44ACFE5E64ADB5C9EF2364 /* ReverseAction.swift in Sources */,
+				CA07E9B805827BBC5FDD258A5C360449 /* RunBlockAction.swift in Sources */,
+				4CDACE02B0F3FEC16D904F82FE947200 /* Tweenable.swift in Sources */,
+				1912A16E53C5367F5C0A5269B013192F /* TweenKit-dummy.m in Sources */,
+				D45966BD5EE6B3F432C9A391C525B836 /* UIBezierPath+BezierPath.swift in Sources */,
+				A31021BDB561E155705DCD509620C2B3 /* UIKit+Tweenable.swift in Sources */,
+				9852F7A87B55195141ED0747DC20DD66 /* YoyoAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973B88DDD37E534D8579502870F6D185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA354E9D181E542083770E50C9B88863 /* Pods-UMC_seventhweekmission2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E81C879DAED884F5AC60615C2EA7616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1644530B9087632C39A06B30C8371A51 /* CircleRotateAnimatable.swift in Sources */,
+				6638D246331476F1C6B2A89410548133 /* CubeAnimatable.swift in Sources */,
+				313E56B016048B97AB843060B2373FF2 /* CustomAnimatable.swift in Sources */,
+				1700B992223AB3E7410F712CA99D745A /* EasingAnimatable.swift in Sources */,
+				9F1A76F96078AED77F58A3E3F2F5FCF8 /* EasingFunction.swift in Sources */,
+				1ABF3063497D422EFD449E0AEE6029A4 /* Gemini-dummy.m in Sources */,
+				65CBB4BBD05C25160FEA1C2BDADCF6A1 /* GeminiAnimationModel.swift in Sources */,
+				EB21B7D3A2DB02DEC1B20939F1BA90D6 /* GeminiCell.swift in Sources */,
+				1BBF4D7C8F0AB61D9414B4F4DC17599A /* GeminiCollectionView.swift in Sources */,
+				335A82F3DE92994F230B5204DD315091 /* PitchRotationAnimatable.swift in Sources */,
+				D6B3B83B4CFC9DD9779C4F29240F5AF6 /* RollRotationAnimatable.swift in Sources */,
+				8A79169564F51EF15E32C1951308CD0E /* ScaleAnimatable.swift in Sources */,
+				C39B5B85A8187BC73414A324B4279B7E /* UIAppearanceAnimatable.swift in Sources */,
+				96AC5BB2CDF17641D8416FB455042843 /* UIViewExtension.swift in Sources */,
+				5D901EB0E8E860D376E6514F5D5D3579 /* YawRotationAnimatable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D94EE35C1AB157EF7117857B15C770A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-UMC_seventhweekmission2";
+			target = DB99BE7414822B3A5E6700B53F09D629 /* Pods-UMC_seventhweekmission2 */;
+			targetProxy = 70D884382DF9D1AC88E88747CF9557BC /* PBXContainerItemProxy */;
+		};
+		310EBBE4BE4FD9053DFB5D89E5C60FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pastel;
+			target = 223ACB2993ED61193B95A52611ED34E7 /* Pastel */;
+			targetProxy = 23F7FD3B3A82EDC0297B9D8956DFA5FD /* PBXContainerItemProxy */;
+		};
+		3111FC39D60FD4927FAE152C335A5DE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TweenKit;
+			target = E4BD4A165F77386C7C44BC76339DCBAC /* TweenKit */;
+			targetProxy = 23914CAB49ADC875ECE2407CE06C3FA3 /* PBXContainerItemProxy */;
+		};
+		576CBFBDD0701914359CD351B1E64F96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gemini;
+			target = A6AC3B95F2D31FE0816D1936AFDFC4F5 /* Gemini */;
+			targetProxy = 7F2E34F944CD612A6BA511BFD12A7B5E /* PBXContainerItemProxy */;
+		};
+		927B336D1D25606F972F480249824977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gemini;
+			target = A6AC3B95F2D31FE0816D1936AFDFC4F5 /* Gemini */;
+			targetProxy = 9001C9684B87104AB12EED8759A94D42 /* PBXContainerItemProxy */;
+		};
+		987BAD6F436B46161BC5526AF4A65CCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pastel;
+			target = 223ACB2993ED61193B95A52611ED34E7 /* Pastel */;
+			targetProxy = 6C3E93E75CCDAF83BE80AB88330C242E /* PBXContainerItemProxy */;
+		};
+		9A6A133D57ACA56EFE280EDE2F28C8A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TweenKit;
+			target = E4BD4A165F77386C7C44BC76339DCBAC /* TweenKit */;
+			targetProxy = B8620620D18C4AE6735AC7DCD486EE8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06741EC9628603F9B8A614F977F805FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DAABA5592523F2217FBD2CD9CE6EE25 /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests/Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests/Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3174A3AC985CEA211F749325A5F11CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 466B11B5BACD97597EEF78890D8519D0 /* Pods-UMC_seventhweekmission2.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_seventhweekmission2/Pods-UMC_seventhweekmission2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_seventhweekmission2/Pods-UMC_seventhweekmission2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		341B90F4EAE7BA7CA125C9ED818EB32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F762298C5F6DFF6F2B4EECE8FB9BE3C /* Gemini.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Gemini/Gemini-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gemini/Gemini-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Gemini/Gemini.modulemap";
+				PRODUCT_MODULE_NAME = Gemini;
+				PRODUCT_NAME = Gemini;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36109D1F95E26F56D59DA3649F63D07A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEE5092F4BCD7E9E3C3B5F9B81C2BF13 /* Pastel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				PRODUCT_MODULE_NAME = Pastel;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		369A3BDCA3AADCE19F6956D0B5FBC4FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F35B728E713B3C4D8F56EC8CC7701F9F /* Pastel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				PRODUCT_MODULE_NAME = Pastel;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		45285987FDC204B9DB7C0228892D4B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4C763AB411CC81A22823E46E789BFAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 149066CCCD9B2842398F6FACA9440257 /* Pods-UMC_seventhweekmission2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_seventhweekmission2Tests/Pods-UMC_seventhweekmission2Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_seventhweekmission2Tests/Pods-UMC_seventhweekmission2Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59CAF21E8D855B0E2E593B4BC744B04F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C587E82B0F780791CB9CE3A61D9D02 /* TweenKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TweenKit/TweenKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TweenKit/TweenKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TweenKit/TweenKit.modulemap";
+				PRODUCT_MODULE_NAME = TweenKit;
+				PRODUCT_NAME = TweenKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DAF9267249F083DF49BDF464BE2E3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB9A6EAF2FEA5E26A0A33F6582409D4 /* Pods-UMC_seventhweekmission2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_seventhweekmission2Tests/Pods-UMC_seventhweekmission2Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_seventhweekmission2Tests/Pods-UMC_seventhweekmission2Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AF9D8D0B4F4FA4695A8EEF773CD3FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7B68B0D889B5C31FF3B01B14419BC858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A8CB4E631EDB10606BCF6597CDA3A3 /* TweenKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TweenKit/TweenKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TweenKit/TweenKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TweenKit/TweenKit.modulemap";
+				PRODUCT_MODULE_NAME = TweenKit;
+				PRODUCT_NAME = TweenKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8742E15C4B33B4EBF96A2225E775D7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDF11331F6CD83C023F9B60F13BB7F71 /* Gemini.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Gemini/Gemini-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gemini/Gemini-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Gemini/Gemini.modulemap";
+				PRODUCT_MODULE_NAME = Gemini;
+				PRODUCT_NAME = Gemini;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A73CE06274A25D3424356DBF5641D0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C3A2F3941E7C5DC27C42CB4A1BE60F /* Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests/Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests/Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7E8D822BE98B50BA93A25D33839218C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4CE44245DB9AB9DEDE20A21D9ADF3B /* Pods-UMC_seventhweekmission2.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_seventhweekmission2/Pods-UMC_seventhweekmission2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_seventhweekmission2/Pods-UMC_seventhweekmission2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2883E1BF894629E45CD5EC3E77DF14AB /* Build configuration list for PBXNativeTarget "TweenKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CAF21E8D855B0E2E593B4BC744B04F /* Debug */,
+				7B68B0D889B5C31FF3B01B14419BC858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		391D83321B48768745DD4E3C7A72FD5E /* Build configuration list for PBXNativeTarget "Pastel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36109D1F95E26F56D59DA3649F63D07A /* Debug */,
+				369A3BDCA3AADCE19F6956D0B5FBC4FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45285987FDC204B9DB7C0228892D4B3E /* Debug */,
+				6AF9D8D0B4F4FA4695A8EEF773CD3FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6475238BB09AAF0FB50939C40809CC87 /* Build configuration list for PBXNativeTarget "Gemini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341B90F4EAE7BA7CA125C9ED818EB32C /* Debug */,
+				8742E15C4B33B4EBF96A2225E775D7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B515321137D1C46D4202CB2DB5E2AC37 /* Build configuration list for PBXNativeTarget "Pods-UMC_seventhweekmission2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3174A3AC985CEA211F749325A5F11CD0 /* Debug */,
+				E7E8D822BE98B50BA93A25D33839218C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD1B4F295D20E6E34E95FA4E676A8E4 /* Build configuration list for PBXNativeTarget "Pods-UMC_seventhweekmission2-UMC_seventhweekmission2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73CE06274A25D3424356DBF5641D0A9 /* Debug */,
+				06741EC9628603F9B8A614F977F805FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2C4DB42FA74BE01736E877C2A1B5DF /* Build configuration list for PBXNativeTarget "Pods-UMC_seventhweekmission2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C763AB411CC81A22823E46E789BFAEB /* Debug */,
+				5DAF9267249F083DF49BDF464BE2E3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
