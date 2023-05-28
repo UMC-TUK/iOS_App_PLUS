@@ -1,0 +1,6 @@
+framework module Pods_Week07_Week07UITests {
+  umbrella header "Pods-Week07-Week07UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
