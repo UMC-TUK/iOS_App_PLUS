@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  MovieApp
+//
+//  Created by 신예진 on 2023/01/18.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974 29
+KAKAO_NATIVE_APP_KEY = e629d2e25d04706f8998a0ba0530473b
+
