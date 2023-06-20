@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y3z-7F-BLR">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="week9_mission" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHt-9I-hpi">
+                                <rect key="frame" x="134.33333333333334" y="408.66666666666669" width="124.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Google Login"/>
+                                <connections>
+                                    <action selector="googleLoginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OSL-rr-ki3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qHt-9I-hpi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pCY-5k-CyW"/>
+                            <constraint firstItem="qHt-9I-hpi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wC1-Fo-2Og"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GFe-0p-5xi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892.36641221374043" y="-27.464788732394368"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="qcy-mt-l6g">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="RxW-ja-Lie" customClass="HomeViewController" customModule="week9_mission" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2s9-v7-nM1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QzS-nD-QfE">
+                                <rect key="frame" x="0.0" y="153.33333333333331" width="393" height="664.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XlQ-5j-4O6">
+                                <rect key="frame" x="30" y="89" width="333" height="34.333333333333343"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yuh-vb-FRK">
+                                        <rect key="frame" x="0.0" y="0.0" width="259.33333333333331" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFR-Oi-e7G">
+                                        <rect key="frame" x="279.33333333333331" y="0.0" width="53.666666666666686" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="검색"/>
+                                        <connections>
+                                            <action selector="searchButtonTapped:" destination="RxW-ja-Lie" eventType="touchUpInside" id="qpC-2o-gSJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D9U-Gi-XDH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QzS-nD-QfE" firstAttribute="top" secondItem="XlQ-5j-4O6" secondAttribute="bottom" constant="30" id="7hT-oi-WzA"/>
+                            <constraint firstItem="XlQ-5j-4O6" firstAttribute="leading" secondItem="D9U-Gi-XDH" secondAttribute="leading" constant="30" id="TRb-tg-vaN"/>
+                            <constraint firstItem="XlQ-5j-4O6" firstAttribute="top" secondItem="D9U-Gi-XDH" secondAttribute="top" constant="30" id="YyH-UU-akC"/>
+                            <constraint firstItem="D9U-Gi-XDH" firstAttribute="bottom" secondItem="QzS-nD-QfE" secondAttribute="bottom" id="b3E-rB-ebN"/>
+                            <constraint firstItem="D9U-Gi-XDH" firstAttribute="trailing" secondItem="XlQ-5j-4O6" secondAttribute="trailing" constant="30" id="lWy-MZ-42h"/>
+                            <constraint firstItem="D9U-Gi-XDH" firstAttribute="trailing" secondItem="QzS-nD-QfE" secondAttribute="trailing" id="nLs-Do-0SE"/>
+                            <constraint firstItem="QzS-nD-QfE" firstAttribute="leading" secondItem="D9U-Gi-XDH" secondAttribute="leading" id="o0A-gV-RYL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="musicSearchTextView" destination="Yuh-vb-FRK" id="Wfj-j7-Vde"/>
+                        <outlet property="tableView" destination="QzS-nD-QfE" id="Z8K-5m-4gO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PnK-e6-ZfB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1582" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EyD-tV-49Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y3z-7F-BLR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XXF-T1-pEG">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fmf-rj-9Eo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGf-ta-yWE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34.351145038167935" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
